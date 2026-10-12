@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "kappa": "1/40",
+  "denominator": "P^2+T^2+delta^2",
+  "description": "Literal rational coefficients for the piecewise nonnegative certificate. The checker independently reconstructs the source expressions and compares all polynomial coefficients.",
+  "polynomials": {
+    "E_plus_B": {
+      "variables": ["P", "delta"],
+      "terms": [["115/1620", [2, 0]], ["393/1620", [1, 1]], ["144/1620", [0, 2]]]
+    },
+    "E_plus_U": {
+      "variables": ["P", "delta"],
+      "terms": [["1/180", [2, 0]], ["33/180", [1, 1]], ["90/180", [0, 2]]]
+    },
+    "E_minus_B": {
+      "variables": ["x", "y"],
+      "terms": [["115/1620", [2, 0]], ["657/1620", [1, 1]]]
+    },
+    "E_minus_U": {
+      "variables": ["x", "y"],
+      "terms": [["1/180", [2, 0]], ["33/180", [1, 1]]]
+    },
+    "C_plus": {
+      "variables": ["P", "delta"],
+      "terms": [["109/540", [1, 0]], ["19/180", [0, 1]]]
+    },
+    "C_minus": {
+      "variables": ["x", "y"],
+      "terms": [["109/540", [1, 0]], ["1/3", [0, 1]]]
+    }
+  },
+  "first_interval_square_coefficient": "11/360",
+  "second_interval_chord_coefficient": "17/180",
+  "sharpness_Q_coefficient": "1/4",
+  "sharpness_N_coefficient": "10",
+  "zero_denominator_Q_coefficient": "1/4"
+}

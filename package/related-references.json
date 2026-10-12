@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "related_document": {
+    "path": "sources/related/global-residual-dimension.md",
+    "repository": "artuskg/sidorenko-template-refinements",
+    "commit": "9922b05bf2c3418e1a46378d4ebac60e8a34ce51",
+    "repository_path": "global-residual-dimension.md",
+    "sha256": "4dab94055d9ede6751dd53728e17ecef27f4d461360fefcd30565e24310c4172",
+    "git_blob_sha1": "dcc39f4f593460cbad663ab168e1e68bf9c0146d",
+    "url": "https://github.com/artuskg/sidorenko-template-refinements/blob/9922b05bf2c3418e1a46378d4ebac60e8a34ce51/global-residual-dimension.md",
+    "bundled": false,
+    "redistribution_basis": "Not established for this document; exact public citation only."
+  },
+  "related_pull_request": "https://github.com/rohanarun/sidorenko-template-refinements/pull/4",
+  "excluded_snapshots": [
+    {
+      "original_path": "sources/related/current-review.json",
+      "original_sha256": "676067ba1f3ff0e0d108a93247da478dea89ae65aed2c21f40deefe50763b6c2",
+      "bundled": false
+    },
+    {
+      "original_path": "sources/related/pr4-snapshot.json",
+      "original_sha256": "e138f3c156fdeef06c620c9ea06f9a814bdef1a888009a130719c4aca4072ed2",
+      "bundled": false
+    }
+  ]
+}

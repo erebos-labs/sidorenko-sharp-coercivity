@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "scope": "Exact rational examples only; these finite examples are not a proof of the universal bound or realizability.",
+  "examples": [
+    {"name":"sharp_unit","c":"1","d":"3","delta":"-1","p":["1","1","1"],"t":["0","0","0"],"v":"0","Q":"1/4","N":"10","ratio":"1/40","equality":true},
+    {"name":"sharp_free_c","c":"4","d":"3","delta":"-1","p":["1","1","1"],"t":["0","0","0"],"v":"0","Q":"1/4","N":"10","ratio":"1/40","equality":true},
+    {"name":"sharp_rational_scale","c":"5/3","d":"2","delta":"-2/3","p":["2/3","2/3","2/3"],"t":["0","0","0"],"v":"0","Q":"1/9","N":"40/9","ratio":"1/40","equality":true},
+    {"name":"strict_larger_d","c":"1","d":"4","delta":"-1","p":["1","1","1"],"t":["0","0","0"],"v":"0","Q":"3/4","N":"10","ratio":"3/40","equality":false},
+    {"name":"strict_larger_c_and_d","c":"3","d":"4","delta":"-1","p":["1","1","1"],"t":["0","0","0"],"v":"0","Q":"5/4","N":"10","ratio":"1/8","equality":false},
+    {"name":"prior_bound_equality","c":"0","d":"6","delta":"0","p":["1","1","1"],"t":["1","1","1"],"v":"0","Q":"1/2","N":"18","ratio":"1/36","equality":false},
+    {"name":"positive_delta_zero_z","c":"1","d":"3","delta":"1","p":["0","0","0"],"t":["0","0","0"],"v":"0","Q":"3/4","N":"1","ratio":"3/4","equality":false},
+    {"name":"positive_delta_negative_z","c":"1","d":"1","delta":"1","p":["0","0","0"],"t":["0","0","0"],"v":"1","Q":"1/4","N":"1","ratio":"1/4","equality":false},
+    {"name":"positive_delta_positive_z_and_v","c":"1","d":"4","delta":"1","p":["0","0","0"],"t":["0","0","0"],"v":"1","Q":"7/4","N":"1","ratio":"7/4","equality":false},
+    {"name":"positive_branch_breakpoint","c":"1","d":"5","delta":"1","p":["1","1","1"],"t":["2/3","2/3","2/3"],"v":"2","Q":"65/36","N":"14","ratio":"65/504","equality":false},
+    {"name":"positive_branch_endpoint","c":"1","d":"9","delta":"1","p":["1","1","1"],"t":["2","2","2"],"v":"0","Q":"9/4","N":"46","ratio":"9/184","equality":false},
+    {"name":"negative_branch_first_interval","c":"1","d":"7","delta":"-1","p":["2","2","2"],"t":["0","0","0"],"v":"1","Q":"17/4","N":"37","ratio":"17/148","equality":false},
+    {"name":"negative_branch_breakpoint","c":"1","d":"7","delta":"-1","p":["2","2","2"],"t":["1/3","1/3","1/3"],"v":"1","Q":"101/36","N":"38","ratio":"101/1368","equality":false},
+    {"name":"negative_branch_second_interval","c":"1","d":"8","delta":"-1","p":["2","2","2"],"t":["2/3","2/3","2/3"],"v":"1/2","Q":"169/72","N":"41","ratio":"169/2952","equality":false},
+    {"name":"negative_branch_endpoint","c":"1","d":"9","delta":"-1","p":["2","2","2"],"t":["1","1","1"],"v":"0","Q":"7/4","N":"46","ratio":"7/184","equality":false},
+    {"name":"nonsymmetric_pairs","c":"2","d":"16","delta":"0","p":["2","3","4"],"t":["0","1","2"],"v":"1","Q":"49/3","N":"90","ratio":"49/270","equality":false},
+    {"name":"zero_denominator_c_zero","c":"0","d":"5","delta":"0","p":["0","0","0"],"t":["0","0","0"],"v":"0","Q":"0","N":"0","ratio":null,"equality":true},
+    {"name":"zero_denominator_d_zero","c":"5","d":"0","delta":"0","p":["0","0","0"],"t":["0","0","0"],"v":"0","Q":"0","N":"0","ratio":null,"equality":true},
+    {"name":"zero_denominator_positive_Q","c":"2","d":"3","delta":"0","p":["0","0","0"],"t":["0","0","0"],"v":"0","Q":"3/2","N":"0","ratio":null,"equality":false}
+  ]
+}

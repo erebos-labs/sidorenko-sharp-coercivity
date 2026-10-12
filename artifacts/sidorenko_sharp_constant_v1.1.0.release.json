@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "version": "1.1.0",
+  "project": "Erebos Labs",
+  "completed_utc": "2026-10-12T13:34:25.330195+00:00",
+  "archive": {
+    "filename": "sidorenko_sharp_constant_v1.1.0.zip",
+    "sha256": "058997f1e17a6c4298c9b62fd6b3a775f06769497c52f8e47e63288baf01fb60",
+    "bytes": 66098,
+    "entries": 23,
+    "CRC_passed": true,
+    "safe_extraction_passed": true
+  },
+  "original_archive_sha256": "b87956508f475622aff4e524c20b0119d37c35eed892b44b366e11e4c5c3429c",
+  "original_archive_unchanged": true,
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "platform": "darwin",
+  "runs": [
+    {
+      "command": [
+        "python3",
+        "-I",
+        "-B",
+        "validate_release.py"
+      ],
+      "cwd": "unrelated directory",
+      "started_utc": "2026-10-12T13:34:23.628050+00:00",
+      "wall_seconds": 0.12877229205332696,
+      "returncode": 0,
+      "stdout_sha256": "1d74f9ad0c4a8feef12d4b63b3be2931fe3d8cac8b6530327dfb860744e8b046",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "-B",
+        "test_release_controls.py"
+      ],
+      "cwd": "unrelated directory",
+      "started_utc": "2026-10-12T13:34:23.757315+00:00",
+      "wall_seconds": 1.3624481249134988,
+      "returncode": 0,
+      "stdout_sha256": "cfd136aef3ba031077f5de920e95b5f362612b9850f9a672ef6a5c6aec55df63",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "-B",
+        "test_mutations.py"
+      ],
+      "cwd": "unrelated directory",
+      "started_utc": "2026-10-12T13:34:25.120470+00:00",
+      "wall_seconds": 0.2062187078408897,
+      "returncode": 0,
+      "stdout_sha256": "c8b0e7d1bd1145f3d96d48da8d10df0186d0dc3e41c972a2276b290a5b6a7835",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "proof_counts": {
+    "identities": 41,
+    "nonnegative_coefficients": 27,
+    "rational_examples": 19,
+    "positive_N_equalities": 3,
+    "zero_N_cases": 3,
+    "required_source_bindings": 3
+  },
+  "release_controls_passed": 26,
+  "original_mathematical_mutations_passed": 2,
+  "privacy_scan": {
+    "pattern_hits": {
+      "private_paths": [],
+      "credentials": [],
+      "email": [],
+      "private_conversation_ids": []
+    },
+    "manual_scope": "Distributable provenance, attribution, source copies and scripts inspected.",
+    "limit": "Bounded pattern scan, not a universal secret detector."
+  },
+  "source_licenses": {
+    "original_contributions": "MIT",
+    "bundled_openai_sources": "Apache-2.0",
+    "related_document": "not bundled; exact citation and pin only"
+  },
+  "remaining_decisions": [],
+  "publication_performed": false
+}

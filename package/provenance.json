@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "version": "1.1.0",
+  "project": "Erebos Labs",
+  "original_contribution_license": "MIT",
+  "original_archive": {
+    "filename": "sidorenko_sharp_constant_v1.zip",
+    "sha256": "b87956508f475622aff4e524c20b0119d37c35eed892b44b366e11e4c5c3429c"
+  },
+  "development": {
+    "original_package": "Supplied through GPT-6 Pro; AI-assisted mathematical package. Per-file roles inside the original session are not separately identified.",
+    "local_review_and_release_preparation": "Codex inspected the proof and checker, replayed the arithmetic, and prepared release packaging and validation.",
+    "human_mathematician_authorship_claimed": false,
+    "proof_assistant_verification_claimed": false
+  },
+  "unchanged_original_payload": {
+    "THEOREM.md": "0123138eb178b42f26bf0884b03e6337edada97b2f5534fcdcc54ef9e588ae0a",
+    "AUDIT.md": "172b43fb68e2f54e95638519a8eea5112408342ccff17ed56a38801cf287bf65",
+    "certificate.json": "830862d68139584b24517ef9a03c9fb9c77d495bed5f94eff762d59df55ef276",
+    "examples.json": "98110ea16726863f63ebafedc0fa37bf96ce7497b5d783493c3133472a40ec33",
+    "test_mutations.py": "71fb1be986feb7ba5c4aac5b13b78fded5ac8357a8222abe6996135871fbf3fb",
+    "sources/openai/tail.tex": "fd2417f6efa4394fc8ba410f0ecb79f260a204c911957c9789a7d9d1ae0e6150",
+    "sources/openai/planted.tex": "2336147f1d032c3d8b114883c593a2d98d03598d190256667ded2a4aee0c6c46",
+    "sources/openai/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  "third_party_files": [
+    {
+      "path": "sources/openai/tail.tex",
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "repository_path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/tail.tex",
+      "sha256": "fd2417f6efa4394fc8ba410f0ecb79f260a204c911957c9789a7d9d1ae0e6150",
+      "git_blob_sha1": "dc11e07a592e70d3a13e3a005c72378c88edc351",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/tail.tex",
+      "license": "Apache-2.0",
+      "modified": false
+    },
+    {
+      "path": "sources/openai/planted.tex",
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "repository_path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/planted.tex",
+      "sha256": "2336147f1d032c3d8b114883c593a2d98d03598d190256667ded2a4aee0c6c46",
+      "git_blob_sha1": "e1a4636e66361dae0f5918e1245950060535a83c",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/planted.tex",
+      "license": "Apache-2.0",
+      "modified": false
+    },
+    {
+      "path": "sources/openai/LICENSE",
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "repository_path": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/LICENSE",
+      "license": "Apache-2.0",
+      "modified": false
+    }
+  ],
+  "excluded_related_document": {
+    "path": "global-residual-dimension.md",
+    "repository": "artuskg/sidorenko-template-refinements",
+    "commit": "9922b05bf2c3418e1a46378d4ebac60e8a34ce51",
+    "git_blob_sha1": "dcc39f4f593460cbad663ab168e1e68bf9c0146d",
+    "sha256": "4dab94055d9ede6751dd53728e17ecef27f4d461360fefcd30565e24310c4172",
+    "bundled": false
+  }
+}
