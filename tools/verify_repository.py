@@ -5,6 +5,8 @@ import hashlib
 import importlib.util
 import json
 from pathlib import Path, PurePosixPath
+import re
+import shutil
 import stat
 import subprocess
 import sys
@@ -18,6 +20,8 @@ FULL_SLACK_ARCHIVE = "sidorenko_full_slack_v1.0.1.zip"
 FULL_SLACK_SHA256 = "95ba9115ff88b93e2d875e9bfc5e17e4042c96ce0f9376ce1a8a211db8db45ce"
 DEFECT_ARCHIVE = "sidorenko_defect_one_v1.0.1.zip"
 DEFECT_SHA256 = "51287961912e0117300c1b87c3a3fd8f22e15d66705a49f6850e2ed9f290c9a5"
+HOST_ARCHIVE = "sidorenko_host_parameter_audit_v1_0_1_rc1.zip"
+HOST_SHA256 = "dac74d1f440b520caa6e0f8eb961b92f6006cfe31688df07026896c5022c3083"
 FROZEN = {
     "tools/verify_coercivity.py": "88f7aa8c8ddba92c071db120d695d767d221ebbad52e25b63abad02392971bf4",
     "variance/SHA256SUMS": "175ec3bce6e7da5e946ab6de9a347729cf822289c0063b837fb8b1c4990eb4c7",
@@ -29,6 +33,9 @@ FROZEN = {
     "defect-one/SHA256SUMS": "dc867119d306102b23a518aca5a496a9939b9e1d0596ccac724df0e3e97f6f2f",
     "artifacts/sidorenko_defect_one_v1.0.1.sha256": "d106e2a3a6f92f50fb63a6400f134e3bb4e5a3112ba54602b9dc6e21e6dbc2a1",
     "artifacts/sidorenko_defect_one_v1.0.1.release.json": "98c261453b5abc62cc34043368f4f54941999b8b12d2ad2352ca69625eb9cb1b",
+    "host-parameters/SHA256SUMS": "010dc714a4cc765575a5a63a87f8296725136dc673f517981107b429d5204439",
+    "artifacts/sidorenko_host_parameter_audit_v1_0_1_rc1.sha256": "a4a651715799d34ddd2ac0c795b807ce4402990f4f4a57c11592db4a9ebcb410",
+    "artifacts/sidorenko_host_parameter_audit_v1_0_1_rc1.release.json": "dff96e7dc5c5c8318fe5f7fd9f0e096e04440bb96b6edb79c8b47e6f4d208052",
 }
 
 
@@ -47,6 +54,47 @@ def run(arguments):
     require(result.returncode == 0, "Command failed: " + Path(str(arguments[0])).name
             + "\n" + result.stdout + result.stderr)
     return result.stdout
+
+
+def verify_public_privacy(root=ROOT):
+    # This exact historical Pro receipt contains only reviewed generic sandbox
+    # paths. It is kept byte-for-byte to preserve the approved artifact.
+    public_receipt = "host-parameters/logs/execution_receipt.json"
+    receipt_digest = "a57c74869bcad5e40012383f02665df96b2564af64d675ccda1dde41776b3584"
+    patterns = {
+        "private filesystem path": r"/(?:Users|home|mnt|private|var)/",
+        "credential marker": r"(?:BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY|sk-[A-Za-z0-9_-]{20,}|gh[pousr]_[A-Za-z0-9]{20,}|AKIA[0-9A-Z]{16}|Bearer [A-Za-z0-9_.-]{20,})",
+    }
+    for path in root.rglob("*"):
+        rel = path.relative_to(root)
+        if rel.parts[0] in {".git", "release-assets", ".agent-harness", "thoughts"} or path.name in {"hey.md", "publish.toml"}:
+            continue
+        require(not path.is_symlink(), "Repository symlink entry")
+        if path.is_file():
+            data = path.read_bytes()
+            text = data.decode("utf-8")
+            for label, pattern in patterns.items():
+                if label == "private filesystem path" and rel.as_posix() == public_receipt and sha(data) == receipt_digest:
+                    continue
+                require(not re.search(pattern, text), "Privacy scan found " + label + ": " + rel.as_posix())
+    print("PASS full public-tree privacy scan; exact reviewed historical sandbox receipt preserved", flush=True)
+
+
+def replay_original():
+    # The frozen v1.1 checker scans its entire enclosing repository. Its old
+    # path policy predates the newly admitted public sandbox receipt. Replay it
+    # unchanged on the preceding package scope, then check the whole current
+    # public tree above with the digest-bound exception and negative controls.
+    with TemporaryDirectory(prefix="sidorenko-legacy-replay-") as td:
+        snapshot = Path(td)/"repository"
+        shutil.copytree(ROOT, snapshot, ignore=shutil.ignore_patterns(
+            ".git", "host-parameters", "release-assets", "__pycache__", ".agent-harness", "thoughts"))
+        print(run([snapshot/"tools/verify_coercivity.py"]), end="", flush=True)
+    verify_public_privacy()
+    controls = json.loads(run([ROOT/"tools/test_public_privacy.py"]))
+    require(controls["status"] == "PASS" and controls["rejection_controls"] == 3,
+            "Public privacy regression controls failed")
+    print("PASS three public-tree privacy rejection controls", flush=True)
 
 
 def bindings():
@@ -93,6 +141,57 @@ def bindings():
             and receipt["claim_scope"]["sufficient_even_D"]==600
             and receipt["claim_scope"]["evenD1198_fallback_retained"],"Defect-one receipt differs")
     print("PASS frozen defect-one manifest, licensed source boundary and conditional metadata",flush=True)
+    require((ROOT/"LICENSE").read_bytes() == (ROOT/"host-parameters/LICENSE").read_bytes(),
+            "Host contribution license differs")
+    spec = importlib.util.spec_from_file_location("host_inventory", ROOT/"host-parameters/verify_package.py")
+    package = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(package)
+    require(package.verify_manifest() == 63, "Host inventory differs")
+    require(len(json.loads((ROOT/"host-parameters/DEPENDENCIES.json").read_text())["ledger"]) == 43,
+            "Host dependency ledger coverage differs")
+    receipt = json.loads((ROOT/"artifacts"/HOST_ARCHIVE.replace(".zip", ".release.json")).read_text())
+    require(receipt["archive"]["sha256"] == HOST_SHA256
+            and receipt["approved_candidate_sha256"] == HOST_SHA256
+            and receipt["repository_version"] == "v1.5.0"
+            and receipt["package_version"] == "1.0.1-rc1"
+            and receipt["exact_approved_candidate_published_without_repacking"]
+            and receipt["self_contained_offline_new_package_replay"]
+            and not receipt["external_source_cache_redistributed"]
+            and not receipt["fetched_programs_executed"]
+            and receipt["claim_scope"]["D"] == 600
+            and receipt["claim_scope"]["host_N"] == "2^53281187287257529723615577"
+            and receipt["claim_scope"]["all_map_deficit"] == ">=1024/N"
+            and receipt["claim_scope"]["inherited_analytic_inputs_conditional"],
+            "Host release receipt differs")
+    print("PASS frozen host manifest, exact approved candidate and conditional release metadata", flush=True)
+
+
+def verify_host_assets(folder):
+    data = (folder/HOST_ARCHIVE).read_bytes()
+    require(sha(data) == HOST_SHA256, "Host ZIP hash differs")
+    for suffix in (".sha256", ".release.json"):
+        name = HOST_ARCHIVE.replace(".zip", suffix)
+        require((folder/name).read_bytes() == (ROOT/"artifacts"/name).read_bytes(),
+                "Host asset metadata differs: " + name)
+    seen = set()
+    with zipfile.ZipFile(folder/HOST_ARCHIVE) as z:
+        require(z.testzip() is None, "Host ZIP CRC failure")
+        for entry in z.infolist():
+            path = PurePosixPath(entry.filename)
+            require(not path.is_absolute() and ".." not in path.parts and "\\" not in entry.filename
+                    and path.as_posix() == entry.filename and len(path.parts) > 1
+                    and path.parts[0] == "sidorenko_host_parameter_audit_v1_0_1_rc1"
+                    and stat.S_ISREG(entry.external_attr >> 16) and not entry.flag_bits & 1,
+                    "Unsafe host ZIP member")
+            name = PurePosixPath(*path.parts[1:]).as_posix()
+            require(name not in seen, "Duplicate host ZIP member")
+            seen.add(name)
+            require(z.read(entry) == (ROOT/"host-parameters"/name).read_bytes(),
+                    "Host ZIP/repository bytes differ: " + name)
+    files = {p.relative_to(ROOT/"host-parameters").as_posix()
+             for p in (ROOT/"host-parameters").rglob("*") if p.is_file()}
+    require(seen == files and len(seen) == 64, "Host ZIP/repository coverage differs")
+    print("PASS host ZIP hash, checksum, receipt and all 64 package files", flush=True)
 
 
 def verify_defect_assets(folder):
@@ -174,6 +273,13 @@ def verify_variance_assets(folder):
 
 def assets(folder):
     found = False
+    if (folder/HOST_ARCHIVE).is_file():
+        verify_host_assets(folder)
+        controls = json.loads(run([ROOT/"tools/test_host_release.py", "--release-dir", folder]))
+        require(controls["status"] == "PASS" and controls["rejection_controls"] == 6,
+                "Host release rejection controls failed")
+        print("PASS six host release asset/tree rejection controls", flush=True)
+        found = True
     if (folder/DEFECT_ARCHIVE).is_file():
         verify_defect_assets(folder)
         found = True
@@ -223,7 +329,7 @@ def main():
         parser.error("--assets-only requires --release-dir")
     bindings()
     if not args.assets_only:
-        print(run([ROOT/"tools/verify_coercivity.py"]),end="",flush=True)
+        replay_original()
         if args.source_cache:
             replay(args.source_cache.resolve())
         else:
@@ -241,12 +347,26 @@ def main():
                 and len(defect["runs"])==2 and all(check["byte_identical"] for check in defect["runs"])
                 and defect["packaging_controls"]["rejection_controls"]==18,"Defect-one replay failed")
         print("PASS defect-one: 25 identities, 6 source bindings, geometric/weighted controls, 14 math mutations and 18 packaging rejections",flush=True)
+        host = json.loads(run([ROOT/"host-parameters/verify_package.py"]))
+        require(host["status"] == "PASS" and host["manifest_files"] == 63
+                and len(host["runs"]) == 4 and all(check["byte_identical"] for check in host["runs"])
+                and host["packaging_controls"]["rejection_controls"] == 18,
+                "Host replay failed")
+        independent = json.loads(run([ROOT/"tools/test_host_transfer.py"]))
+        require(independent["status"] == "PASS" and independent["map_controls"] == 4238
+                and independent["collapsed_maps"] == 3928
+                and independent["activation_covariance_pairs"] == 32768
+                and independent["original_H_to_three_vertex_star_all_maps"] == 4202496
+                and independent["parameters"]["600"]["host_B"] == 53281187287257529723615577,
+                "Independent host controls failed")
+        print("PASS host: 43 dependency entries, 20 identities, 26 new/14 inherited rejections and 18 packaging controls", flush=True)
+        print("PASS independent host: 4238 maps (3928 collapsed), 32768 covariances, exact cloning/all-map/finite-field controls", flush=True)
     if args.release_dir:
         assets(args.release_dir.resolve())
     if args.assets_only:
         print("PASS downloaded assets; arithmetic NOT_RUN in assets-only mode",flush=True)
     else:
-        print("PASS all four packages and scoped conditional certificates; conventional proofs remain necessary",flush=True)
+        print("PASS all five packages and scoped conditional certificates; conventional proofs remain necessary",flush=True)
 
 
 if __name__ == "__main__":

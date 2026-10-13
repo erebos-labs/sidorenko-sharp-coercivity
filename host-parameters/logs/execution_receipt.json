@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "recorded_utc": "2026-10-13T13:09:36.127232+00:00",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "runs": [
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "-I",
+        "-B",
+        "/mnt/data/sidorenko_host_parameter_audit_v1_0_0/check_audit.py"
+      ],
+      "cwd": "unrelated temporary directory for first three; /mnt/data for inherited mutation retry",
+      "exit_code": 0,
+      "wall_seconds_reported": 0.909,
+      "stdout_path": "logs/audit.stdout.json",
+      "stderr_path": "logs/audit.stderr.txt",
+      "stdout_sha256": "ad00ee4ed3b3badb1a0e756541ab7a142e36d0d157b583bade44c0450728b400",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "-I",
+        "-B",
+        "/mnt/data/sidorenko_host_parameter_audit_v1_0_0/test_rejections.py"
+      ],
+      "cwd": "unrelated temporary directory for first three; /mnt/data for inherited mutation retry",
+      "exit_code": 0,
+      "wall_seconds_reported": 25.019,
+      "stdout_path": "logs/rejections.stdout.json",
+      "stderr_path": "logs/rejections.stderr.txt",
+      "stdout_sha256": "75009834983837104336f3b63644bf422a5b5939aaf3353a66b114a0eb45974c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "-I",
+        "-B",
+        "/mnt/data/sidorenko_host_parameter_audit_v1_0_0/inherited/defect-one/check_exact.py"
+      ],
+      "cwd": "unrelated temporary directory for first three; /mnt/data for inherited mutation retry",
+      "exit_code": 0,
+      "wall_seconds_reported": 0.928,
+      "stdout_path": "logs/inherited.stdout.json",
+      "stderr_path": "logs/inherited.stderr.txt",
+      "stdout_sha256": "06b61d9ad0122711e1d7efbaf1ea3c730230c0ece7db16de04854518fa754a3e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "-I",
+        "-B",
+        "/mnt/data/sidorenko_host_parameter_audit_v1_0_0/inherited/defect-one/test_mutations.py"
+      ],
+      "cwd": "unrelated temporary directory for first three; /mnt/data for inherited mutation retry",
+      "exit_code": 0,
+      "wall_seconds_reported": 13.249048340999934,
+      "stdout_path": "logs/inherited_mutations.stdout.json",
+      "stderr_path": "logs/inherited_mutations.stderr.txt",
+      "stdout_sha256": "2dbdeee72187aacdac6638d64803975e7acc632f7b4527c84cfdaef02e4e9ffc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "interruption": {
+    "first_orchestration_command": [
+      "python3",
+      "-B",
+      "/mnt/data/_host_audit_work/run_checks.py"
+    ],
+    "tool_timeout_seconds": 120,
+    "completed_before_interruption": [
+      "audit",
+      "rejections",
+      "inherited"
+    ],
+    "inherited_mutations_at_interruption": "No receipt or result; NOT claimed passed on that attempt.",
+    "successful_separate_retry": "python3 -I -B inherited/defect-one/test_mutations.py, exit 0; stdout matches pinned expectation byte for byte.",
+    "streaming_session_attempt": "Tool rejected StreamingExecNotEnabledContainerError before execution."
+  },
+  "generation": {
+    "command": [
+      "/opt/pyvenv/bin/python3",
+      "-I",
+      "-B",
+      "/mnt/data/sidorenko_host_parameter_audit_v1_0_0/check_audit.py",
+      "--emit-certificates"
+    ],
+    "exit_code": 0,
+    "scope": "Small JSON generation, before source ledger finalized. Final audit run above includes source binding."
+  },
+  "not_run": [
+    "Theorem-sized prime test, field, kernel or host; exhaustive type-map enumeration; complete upstream repository/CI verifier; Lean compilation.",
+    "Positive optional local byte verification of the entire retained manuscript. Its complete connector text and pinned expected identities were accessible."
+  ],
+  "packaging_run": {
+    "command": [
+      "/opt/pyvenv/bin/python3",
+      "-I",
+      "-B",
+      "/mnt/data/sidorenko_host_parameter_audit_v1_0_0/test_packaging.py"
+    ],
+    "exit_code": 0,
+    "stdout_path": "logs/packaging.stdout.json",
+    "stderr_path": "logs/packaging.stderr.txt",
+    "status": "PASS",
+    "rejections": 18,
+    "clean_inventory_files": 61,
+    "original_pinned_test_file_sha256": "2d93696689efc21052eca850a0d017e4cf2bf31c93c6c99284d0d4a5ab488808",
+    "strict_manifest_function": "Byte-identical source segment to the pinned verifier; AST/source comparison executed."
+  },
+  "clean_archive_attempt_interruption": {
+    "command": [
+      "python3",
+      "-B",
+      "/mnt/data/_host_audit_work/finalize_audit.py"
+    ],
+    "tool_requested_timeout_seconds": 200,
+    "result": "Tool interrupted before a complete archive replay receipt. No final archive success claimed on that attempt.",
+    "diagnostic": "The pending inherited integer-mode mutation was separately invoked from the extracted package and rejected at the expected CHECK_FAILED site with exit1.",
+    "repair": "Run the same bounded finalizer as a local process with file-backed output, and poll its completion within this response. No proof or checker premise changed."
+  }
+}

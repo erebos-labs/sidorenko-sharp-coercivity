@@ -39,3 +39,13 @@ MIT source notice; copied OpenAI complex.tex retains Apache-2.0. All source
 license bytes remain unchanged. See defect-one/THIRD_PARTY_NOTICES.md and
 its source licenses. The unclear-license recovered manuscript is pinned
 as an external reference and is not redistributed.
+
+The host-parameter package in host-parameters/ uses MIT for its new audit
+proof, ledgers, certificates, programs and controls. Its licensed inherited
+Erebos/OpenAI copies retain their exact MIT/Apache-2.0 notices. Two attribution
+files were restored to their claimed v1.4.0 source bytes in the approved
+candidate; no mathematical source changed. The retained manuscript and other
+unclear-license sources remain immutable references, not redistributed text.
+See host-parameters/THIRD_PARTY_NOTICES.md and PACKAGING_CORRECTIONS.md.
+The separate repository independent controls adapt the auditor's independently
+written standard-library reconstruction; they do not execute fetched programs.

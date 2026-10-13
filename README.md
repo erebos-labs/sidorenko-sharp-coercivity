@@ -43,9 +43,28 @@ The [conditional rank-layer consequence](defect-one/DOWNSTREAM.md) admits
 `C_D=2^(32D+2048)(D+1)^256`. M<=50 and integer mode removal are inherited.
 The robust unsplit bound with residual 1196 and even-D>=1198 fallback remain valid. These residual
 constants are sufficient bounds, not sharpness or optimal-dimension claims.
-The recovered concrete host construction at D=7296 has not been re-specialized
-here; no complete smaller counterexample or new finite-host parameters follow
-from this release alone.
+That v1.4.0 rank-layer release by itself did not re-specialize the recovered
+concrete host construction at D=7296.
+
+The [host-parameter transfer](host-parameters/PROOF.md), published in
+[v1.5.0](https://github.com/erebos-labs/sidorenko-sharp-coercivity/releases/tag/v1.5.0),
+now completes that specialization at **D=600, r=300 under the retained analytic
+inputs**. It establishes existence of a simple host of the sufficient order
+
+~~~text
+N = 2^53281187287257529723615577
+p(G)^66 - t(H,G) >= 1024/N
+~~~
+
+The complete condition is odd prime `q>9600+J^6`, with
+`J=66*601^256*2^53303404092777429`; `q>=9600` alone is insufficient.
+Both orientations, every type map (including collapsed maps), kernel diagonals,
+exact rational cloning and all-map sampling losses are accounted for. The old
+D=7296 construction remains valid. This is a smaller certified sufficient host
+order under the inherited analytic premises, with a finite deterministic
+selection specification. **No enormous graph, prime, field or kernel was
+instantiated.** See the [43-entry dependency ledger](host-parameters/DEPENDENCIES.md)
+and [independent audit summary](docs/HOST_PUBLICATION_AUDIT.md).
 
 For V>0, equality in Q>=V/48 is exactly, up to permutation,
 c=delta=v=0, p=t=(a,0,0), a>0, d>=2a. The stronger auxiliary bound is
@@ -58,7 +77,7 @@ integer profiles and the inherited geometric/probability/transverse inputs.
 This is an analytic sufficient-dimension certificate, not a reconstructed
 smaller complete counterexample or an optimal dimension claim.
 
-## Reproduce all four packages
+## Reproduce all five packages
 
 Python 3.9 or newer; standard library only:
 
@@ -86,6 +105,25 @@ and 18 packaging rejection controls. Its standalone replay is offline:
 ~~~sh
 python3 -I -B defect-one/verify_package.py
 ~~~
+
+It also replays the corrected host-parameter package's four mathematical
+programs byte for byte, with 20 identities, 26 new rejection controls,
+14 inherited mutations and 18 packaging rejection controls. Independent
+repository controls reconstruct the pinning arrays, test 4,238 type maps
+(3,928 collapsed), 32,768 exact activation covariance entries, cloning,
+all-map counts, prime-lemma controls and small signed-matrix normalizers.
+These bounded tests support separate conventional arguments and do not
+replace the inherited analytic premises. Standalone host replay is offline:
+
+~~~sh
+python3 -I -B host-parameters/verify_package.py
+python3 -I -B tools/test_host_transfer.py
+~~~
+
+The unchanged original verifier is replayed on its preceding package scope;
+a separate whole-public-tree privacy scan admits only the exact reviewed
+historical Pro sandbox receipt and rejects new private paths or credentials.
+Downloaded host assets also undergo six corruption/tree-mismatch controls.
 
 **Full variance replay requires 18 external files.** The repository and ZIP
 are not a self-contained offline full replay. They omit refinement snapshots
@@ -129,6 +167,22 @@ The tracked defect-one/ tree matches its ZIP member for member. All prior
 release files and results are preserved; use the same asset-verification
 command with a downloaded v1.4.0 release.
 
+Repository [v1.5.0](https://github.com/erebos-labs/sidorenko-sharp-coercivity/releases/tag/v1.5.0)
+publishes the **exact approved host package 1.0.1-rc1**, SHA256
+`dac74d1f440b520caa6e0f8eb961b92f6006cfe31688df07026896c5022c3083`,
+its checksum and portable release receipt. The package retains its reviewed
+candidate filename/version; repository v1.5.0 is a separate version.
+The tracked host-parameters/ tree matches all 64 ZIP files byte for byte.
+Two stale inherited notices were restored to the pinned published bytes;
+all mathematics is unchanged. The original historical Pro status files
+remain intact; the separate independent evidence records the completed
+80,925-byte retained-manuscript hash check. No unclear-license cache is released.
+
+~~~sh
+gh release download v1.5.0 --repo erebos-labs/sidorenko-sharp-coercivity --dir release-assets
+python3 -I -B tools/verify_repository.py --release-dir release-assets
+~~~
+
 ~~~sh
 gh release download v1.2.0 --repo erebos-labs/sidorenko-sharp-coercivity --dir release-assets
 python3 -I -B tools/verify_repository.py --release-dir release-assets
@@ -136,7 +190,9 @@ python3 -I -B tools/verify_repository.py --release-dir release-assets
 
 The verifier also accepts the unchanged v1.1.0 assets, and the original
 package remains independently reproducible with
-python3 -I -B tools/verify_coercivity.py. Published-release CI downloads the
+python3 -I -B package/validate_release.py. The frozen original repository
+verifier is run by the wrapper on its preceding package scope, with the
+separate current-tree privacy check described above. Published-release CI downloads the
 actual assets and verifies their hashes, metadata and complete ZIP/tree match
 after full replay on the release commit.
 
@@ -153,7 +209,10 @@ Apache-2.0 and source credit. Related unclear-license documents are references
 only; the source cache is excluded from releases. See
 [third-party notices](THIRD_PARTY_NOTICES.md) and the package notices.
 
-Novelty/global priority, geometric realization, optimal M/D, a smaller
-complete counterexample, recalculated finite host and Lean formalization
-are not claimed. This is an independent Erebos Labs project, not an official
-OpenAI publication.
+Novelty/global priority, geometric realization of relaxed extremizers,
+optimal M/D or host order, an instantiated enormous counterexample,
+independent human acceptance and Lean formalization are not claimed.
+The host existence and sufficient-order transfer are conditional on the
+retained analytic inputs; the geometric theorems are not newly fully proved
+by this parameter audit. This is an independent Erebos Labs project, not
+an official OpenAI publication.

@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "bundled_path": "sources/published/variance/THEOREM.md",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "1b6abc821b7fb95cc0ca71ba804e0c4ae19df4e4",
+      "repository_path": "variance/THEOREM.md",
+      "git_blob_sha1": "caaf4fe3f77f266bb17ee69d500dac8c9921bd6d",
+      "sha256": "095b40be10a3f5a5259a365f6bc7bbdd86dda58cc49c2f61e2249ec45ee01ad9",
+      "bytes": 12041
+    },
+    {
+      "bundled_path": "sources/published/variance/DOWNSTREAM.md",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "1b6abc821b7fb95cc0ca71ba804e0c4ae19df4e4",
+      "repository_path": "variance/DOWNSTREAM.md",
+      "git_blob_sha1": "922bebb56ffbef76723e048acd77848a61d1ee2f",
+      "sha256": "add66719a7b0da22823c4bdc67a1ed9a86a47bf7c25fc12e2a3778744f67a913",
+      "bytes": 15880
+    },
+    {
+      "bundled_path": "sources/published/variance/original_certificate.json",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "1b6abc821b7fb95cc0ca71ba804e0c4ae19df4e4",
+      "repository_path": "variance/original_certificate.json",
+      "git_blob_sha1": "75f203c1895e92aaa60eaa429ae4483d5dba850a",
+      "sha256": "f89ead9132825c15ee11cff0ba7c29e0718f506b52310c77dc930765beadc99d",
+      "bytes": 38616
+    },
+    {
+      "bundled_path": "sources/openai/tail.tex",
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "repository_path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/tail.tex",
+      "git_blob_sha1": "dc11e07a592e70d3a13e3a005c72378c88edc351",
+      "sha256": "fd2417f6efa4394fc8ba410f0ecb79f260a204c911957c9789a7d9d1ae0e6150",
+      "bytes": 29882
+    },
+    {
+      "bundled_path": "sources/openai/planted.tex",
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "repository_path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/planted.tex",
+      "git_blob_sha1": "e1a4636e66361dae0f5918e1245950060535a83c",
+      "sha256": "2336147f1d032c3d8b114883c593a2d98d03598d190256667ded2a4aee0c6c46",
+      "bytes": 21612
+    },
+    {
+      "bundled_path": "sources/openai/complex.tex",
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "repository_path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/complex.tex",
+      "git_blob_sha1": "178b0e9da21867a727ea847dae8e537b9d719a70",
+      "sha256": "b7023c77ec390b3392617c51b1ca3d3ee70d707af6c71e82b0b56547513bbe8a",
+      "bytes": 7236
+    },
+    {
+      "bundled_path": "sources/openai/LICENSE",
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "repository_path": "LICENSE",
+      "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "bundled_path": "sources/published/LICENSE",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "1b6abc821b7fb95cc0ca71ba804e0c4ae19df4e4",
+      "repository_path": "LICENSE",
+      "git_blob_sha1": "fd53c72f02b17b6c660b9a95144175fc4178f8b3",
+      "sha256": "04690d463ba7d13b6b853229a5b1eefefd0b346e063a55967ba2f75f06038a6c",
+      "bytes": 1068
+    }
+  ],
+  "external_retained_input": {
+    "repository": "artuskg/sidorenko-template-refinements",
+    "commit": "06acd4cf46bfe9086f9abc7d85b5c9f171480143",
+    "path": "experiments/original-effective-host/recovered/PROOF.md",
+    "sha256": "20c917f8fbab9cc51a92d0a4c853ca2080541a9a15c116bd3343150993aaf031",
+    "bundled": false,
+    "use": "Retained geometric/analytic inputs, in particular nondirect remainder 1196, as specified by published variance/DOWNSTREAM.md."
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "600": {
+    "A0": 53303404092753965,
+    "C_D": {
+      "base": 601,
+      "power": 256,
+      "two_power": 21248
+    },
+    "D": 600,
+    "H_c": {
+      "coefficient": 66,
+      "two_power": 2210
+    },
+    "J": {
+      "base": 601,
+      "coefficient": 66,
+      "power": 256,
+      "two_power": 53303404092777429
+    },
+    "J_upper_two_power": 53303404092779996,
+    "Lambda": 53303404092753966,
+    "Q0": "9600 + J^6",
+    "Z": 3807386006623258,
+    "asymptotic_fields_allocated": false,
+    "atom_count_coefficient": 308,
+    "atom_count_q_power": 23799600,
+    "bD": 180300,
+    "b_r": 45150,
+    "chart_prefactor_power": 299,
+    "clone_log_bound": 7611598180401195980621428,
+    "coin_log_bound": 2421872147123821977688178,
+    "epsilon_power": 3807386006625439,
+    "generic_host_n": "integer n >= 1322 * 2^Lambda * q^(924*bD)",
+    "host_B": 53281187287257529723615577,
+    "host_N": "2^B",
+    "host_gap": "1024/N",
+    "kernel_gap_q_power": 166597200,
+    "mu_q_power": 2524200,
+    "new_defect_savings": [
+      359,
+      4
+    ],
+    "normalizer_enumeration_log_bound": 57663622547569400033400,
+    "planted_prefactor": {
+      "D_plus_one_power": 5,
+      "two_power": 647
+    },
+    "profile_count_power": 55,
+    "profile_prefactor_power": 87,
+    "q_choice": "least prime in the finite interval (Q0,2Q0); existence proved, not tested",
+    "q_condition": "odd prime q > Q0",
+    "q_upper_two_power": 319820424556679978,
+    "r": 300,
+    "rank_prime_floor": 9600,
+    "saving_profile_gap": "1/6",
+    "theorem_host_allocated": false,
+    "transverse_prefactor_power": 170
+  },
+  "7296": {
+    "A0": 53303404092753965,
+    "C_D": {
+      "base": 7297,
+      "power": 256,
+      "two_power": 235520
+    },
+    "D": 7296,
+    "H_c": {
+      "coefficient": 66,
+      "two_power": 2210
+    },
+    "J": {
+      "base": 7297,
+      "coefficient": 66,
+      "power": 256,
+      "two_power": 53303404092991701
+    },
+    "J_upper_two_power": 53303404092995036,
+    "Lambda": 53303404092753966,
+    "Q0": "116736 + J^6",
+    "Z": 3807386006623258,
+    "asymptotic_fields_allocated": false,
+    "atom_count_coefficient": 308,
+    "atom_count_q_power": 3513768192,
+    "bD": 26619456,
+    "b_r": 6655776,
+    "chart_prefactor_power": 299,
+    "clone_log_bound": 1123774834967853447267918484,
+    "coin_log_bound": 357564720215858629205464514,
+    "epsilon_power": 3807386006625439,
+    "generic_host_n": "integer n >= 1322 * 2^Lambda * q^(924*bD)",
+    "host_B": 7866423844799423288734694969,
+    "host_N": "2^B",
+    "host_gap": "1024/N",
+    "kernel_gap_q_power": 24596377344,
+    "mu_q_power": 372672384,
+    "new_defect_savings": [
+      7055,
+      13396
+    ],
+    "normalizer_enumeration_log_bound": 8513445719422207667361408,
+    "planted_prefactor": {
+      "D_plus_one_power": 5,
+      "two_power": 7343
+    },
+    "profile_count_power": 55,
+    "profile_prefactor_power": 87,
+    "q_choice": "least prime in the finite interval (Q0,2Q0); existence proved, not tested",
+    "q_condition": "odd prime q > Q0",
+    "q_upper_two_power": 319820424557970218,
+    "r": 3648,
+    "rank_prime_floor": 116736,
+    "saving_profile_gap": "1/6",
+    "theorem_host_allocated": false,
+    "transverse_prefactor_power": 170
+  }
+}

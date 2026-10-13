@@ -1,0 +1,258 @@
+{
+  "controls": [
+    {
+      "changed_fields": {
+        "new_D": 598,
+        "new_r": 299
+      },
+      "exit_code": 1,
+      "input_sha256": "38ffaf2a28ec5ae1119376553cd133835cb08af35e806efd5b3080182ae3ebed",
+      "name": "inadmissible dimension",
+      "rejection_site": "even_rank_reversal",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "new_r": 301
+      },
+      "exit_code": 1,
+      "input_sha256": "8fa6cee3e97980c17dff6407ad8f81856e3211a660462a45f0c097279bf777f5",
+      "name": "odd rank loses retained sign reversal",
+      "rejection_site": "even_rank_reversal",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "new_D": 596,
+        "new_r": 298
+      },
+      "exit_code": 1,
+      "input_sha256": "b73d48bd8a5a9570722a63ba05b40380a7b219d5418e17b6bc8e480d2b03a920",
+      "name": "mode-removal floor not reached",
+      "rejection_site": "integer_mode_admission",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "prime_policy": "odd prime q >= 9600"
+      },
+      "exit_code": 1,
+      "input_sha256": "4625b2ea2b92ab2e6a5da419796f0fd24239f94f919370658b206e1a7a61ac1a",
+      "name": "rank-layer prime floor only",
+      "rejection_site": "complete_host_prime_condition",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "field_error_padding_power": 5
+      },
+      "exit_code": 1,
+      "input_sha256": "c5658b1c9ee1f3b12478dd3bb94bd017db3defc03e70ec76c462ad2f02395453",
+      "name": "missing factor two in field error budget",
+      "rejection_site": "complete_kernel_error_padding",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "rank_envelope_poly_power": 255
+      },
+      "exit_code": 1,
+      "input_sha256": "c8f2e729f86b6351a5773fd4b6ceb5febc682d4090d740557fa39e2ed3ef79ac",
+      "name": "dropped C_D polynomial exponent",
+      "rejection_site": "published_C_D_envelope",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "coordinate_count": 65
+      },
+      "exit_code": 1,
+      "input_sha256": "589f1ea550000682968495e88aca803e0b65805e58ac68bd5b460d2a31effcf7",
+      "name": "one coordinate omitted",
+      "rejection_site": "tensor_product_multiplicity",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "theta": "3/2"
+      },
+      "exit_code": 1,
+      "input_sha256": "9c79ee331aecda84fdbc95c4aeffe7cbeb983473a103f7d6587c387e0679d537",
+      "name": "invalid activation theta",
+      "rejection_site": "activation_theta",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "sign_branch_weights": [
+          "1/2",
+          "1/3"
+        ]
+      },
+      "exit_code": 1,
+      "input_sha256": "563459c57d3196178512e8b41dfe47f2227304118044b562d27bd404439f36e5",
+      "name": "branch weights fail normalization",
+      "rejection_site": "activation_branch_weights",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "empty_product": 0
+      },
+      "exit_code": 1,
+      "input_sha256": "09f715d8a3fb3f1bf6d7c4331f3fc11545141d597c1f34d8bc3974e774fb66b3",
+      "name": "empty product replaced by zero",
+      "rejection_site": "empty_product_normalization",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "score_base_power": 2458
+      },
+      "exit_code": 1,
+      "input_sha256": "46d5176540c386ba1c50b6d5dfcf7d75ca1927e73ba562c10b9d90f019ffbe1b",
+      "name": "nonidentity pinning padding shortened",
+      "rejection_site": "pinning_score_base",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "map_count_power": 100
+      },
+      "exit_code": 1,
+      "input_sha256": "d0599cea89ea5a07f7cf1f1bfc68daa632c19de99e7e437bc3fac32651ae2248",
+      "name": "all-map count replaced by injective bound",
+      "rejection_site": "all_type_map_count",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "independent_incidence_draws": false
+      },
+      "exit_code": 1,
+      "input_sha256": "09d045d125267dec9b93ab4cfb18d01d3e8fed6e0d651579be0a236b408adfd5",
+      "name": "independent incidence draws removed",
+      "rejection_site": "independent_repeated_type_pairs",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "incidence_reuse_count": 1
+      },
+      "exit_code": 1,
+      "input_sha256": "ba6a10f6bb79b06b10cfb12a5cf0090a94e69c8b711a3fbe240e979058e51b1c",
+      "name": "repeated type pair thinned only once",
+      "rejection_site": "independent_repeated_type_pairs",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "collisions": 594
+      },
+      "exit_code": 1,
+      "input_sha256": "39cb07de94e1b8b1abf09de078bc87696404c0e37d8cc0841e8cb5c85b4e4599",
+      "name": "collision pair omitted",
+      "rejection_site": "all_map_collision_budget",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "host_loss": 660
+      },
+      "exit_code": 1,
+      "input_sha256": "65340a9efa8e242e0552155f983c68d9df0ddaa99420a2bf74478b19e86a750b",
+      "name": "loop or collision budget underpaid",
+      "rejection_site": "complete_sampling_budget",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "host_half_gap_multiplier": 1321
+      },
+      "exit_code": 1,
+      "input_sha256": "ef9d41c54f3ec752152ff2da83e9cf9ac037653d44861e902cc366eeb4409c30",
+      "name": "half-gap host size shortened",
+      "rejection_site": "half_gap_host_size",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "kernel_scale_multiplier": 13
+      },
+      "exit_code": 1,
+      "input_sha256": "a4e8fb1c910b878371f37d6fbdcdf8982fdf6f040cd58052e35678a36063ad54",
+      "name": "kernel scaling power shortened",
+      "rejection_site": "bounded_kernel_scaling",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "coin_matrix_multiplier": 41
+      },
+      "exit_code": 1,
+      "input_sha256": "915fc84365650af607bd89096b1d621b310c1c16336b623f01d50272a9c41df2",
+      "name": "coin denominator undercounts rank powers",
+      "rejection_site": "exact_cloning_and_coins",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "host_padding_power": 10
+      },
+      "exit_code": 1,
+      "input_sha256": "e41ab9409fac4ae74bb14d6d3aefbe204e8d49b992e28a001f202c667e0b2a2f",
+      "name": "fixed host padding reduced to target gap",
+      "rejection_site": "fixed_host_padding",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "new_host_B": 53281187287257529723615576
+      },
+      "exit_code": 1,
+      "input_sha256": "e96294424879932f0257bd9421d101e2565b3a05c3c41e59cdfdf5776238fe36",
+      "name": "new host exponent corrupted",
+      "rejection_site": "host_order_exponent",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "all_maps": false
+      },
+      "exit_code": 1,
+      "input_sha256": "66e3b936efe8b2c4b2f677755ec46fb606ab0e5c69cdb20fb35f1b9f08c5b357",
+      "name": "injective-only host count",
+      "rejection_site": "collapsed_original_H_homomorphisms",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "changed_fields": {
+        "fallback_residual": 189
+      },
+      "exit_code": 1,
+      "input_sha256": "57633aa6ed34ed11ffa6a07a09dbb4808d0542f44945128758e55a62300d11ad",
+      "name": "robust fallback silently changed",
+      "rejection_site": "fallback_1196_preserved",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "exit_code": 1,
+      "name": "optimized Python",
+      "rejection_site": "optimized_python_not_accepted",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "name": "wrong optional external bytes",
+      "rejection_site": "External source length mismatch",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "name": "equal-length wrong optional external bytes",
+      "rejection_site": "External source SHA256 mismatch",
+      "status": "REJECTED_AS_EXPECTED"
+    }
+  ],
+  "limits": "These reject the specified corruptions only. Optional external positive byte binding remains NOT_RUN.",
+  "rejection_count": 26,
+  "status": "PASS"
+}

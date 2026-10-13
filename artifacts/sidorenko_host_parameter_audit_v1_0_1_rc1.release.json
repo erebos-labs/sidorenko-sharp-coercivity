@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-13T15:00:57.231282+00:00",
+  "repository_version": "v1.5.0",
+  "package_version": "1.0.1-rc1",
+  "mathematical_handoff_version": "1.0.0",
+  "archive": {
+    "name": "sidorenko_host_parameter_audit_v1_0_1_rc1.zip",
+    "sha256": "dac74d1f440b520caa6e0f8eb961b92f6006cfe31688df07026896c5022c3083",
+    "bytes": 190102,
+    "regular_entries": 64
+  },
+  "approved_candidate_sha256": "dac74d1f440b520caa6e0f8eb961b92f6006cfe31688df07026896c5022c3083",
+  "original_handoff_sha256": "cb9e0321ce9bbd722553c2c5e08c74a81c07212ca49c6c8f421a6b1e3db93e42",
+  "baseline_commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+  "manifest_sha256": "010dc714a4cc765575a5a63a87f8296725136dc673f517981107b429d5204439",
+  "exact_approved_candidate_published_without_repacking": true,
+  "self_contained_offline_new_package_replay": true,
+  "historical_repository_replay_requires_external_cache": true,
+  "external_source_cache_redistributed": false,
+  "fetched_programs_executed": false,
+  "retained_manuscript_positive_byte_check": {
+    "bytes": 80925,
+    "sha256": "20c917f8fbab9cc51a92d0a4c853ca2080541a9a15c116bd3343150993aaf031",
+    "git_blob_sha1": "e5f1aaef9c3020054f0221a5b5dedc8260d5d5e4",
+    "status": "PASS"
+  },
+  "corrections": [
+    "Restored exact pinned defect-one and full-slack attribution notices",
+    "Corrected their source-byte bindings; historical mathematical files and outputs unchanged"
+  ],
+  "local_replay": {
+    "status": "PASS",
+    "python": "3.14.7",
+    "manifest_files": 63,
+    "mathematical_programs": 4,
+    "outputs_byte_identical": true,
+    "new_rejections": 26,
+    "inherited_mutations": 14,
+    "packaging_rejections": 18
+  },
+  "claim_scope": {
+    "D": 600,
+    "r": 300,
+    "host_N": "2^53281187287257529723615577",
+    "all_map_deficit": ">=1024/N",
+    "complete_odd_prime_condition": "q>9600+J^6",
+    "J": "66*601^256*2^53303404092777429",
+    "inherited_analytic_inputs_conditional": true,
+    "old_D7296_construction_retained": true,
+    "robust_residual1196_retained": true,
+    "deterministic_selection": "Finite graph enumeration, not executed"
+  },
+  "not_claimed": [
+    "Instantiated enormous graph/field/prime/kernel",
+    "Practical generation",
+    "Optimal order or dimension",
+    "Novelty/global priority",
+    "Independent human acceptance",
+    "Lean verification",
+    "New proof of all inherited analytic inputs"
+  ],
+  "CI_record": "Python 3.9 and 3.14 hosted results must be verified on the exact release commit; consult GitHub Actions.",
+  "new_contributions_license": "MIT; copied OpenAI material remains Apache-2.0"
+}

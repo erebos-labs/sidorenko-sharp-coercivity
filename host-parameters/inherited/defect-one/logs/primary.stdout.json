@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "source_files_bound": 6,
+  "polynomial_identities": 25,
+  "identity_labels": [
+    "robust_actual_defect_exponent",
+    "robust_complete_square",
+    "robust_uniform_1196",
+    "gain_after_full_basis_division",
+    "endpoint_binomial_increment_0",
+    "endpoint_binomial_increment_1",
+    "step_cost_111",
+    "containment_telescoping_111",
+    "step_cost_000",
+    "containment_telescoping_000",
+    "step_cost_001",
+    "containment_telescoping_001",
+    "step_cost_010",
+    "containment_telescoping_010",
+    "step_cost_011",
+    "containment_telescoping_011",
+    "defect_one_prefix_budget",
+    "coarse_degree_envelope",
+    "uniform_defect_one_remainder",
+    "inherited_direct_exponent",
+    "rank_layer_prefactor",
+    "rank_layer_polynomial_power",
+    "retained_envelope_second_half",
+    "retained_envelope_first_half",
+    "defect_one_absorption_margin"
+  ],
+  "budget": {
+    "points": 13,
+    "faces": 22,
+    "point_pairs": 33,
+    "zero_excess_pairs": 28,
+    "degree_caps": [
+      3,
+      6,
+      3,
+      6,
+      4,
+      2,
+      4,
+      4,
+      4,
+      6,
+      4,
+      6,
+      4
+    ],
+    "prefix_budget": 468,
+    "last_prefix_cap": 11,
+    "six_exposures_checked": 6,
+    "support_sizes_arithmetic_only": 27,
+    "defect_one_remainder": 241,
+    "defect_one_prefactor_power": 118,
+    "higher_defect_prefactor_power": 63,
+    "D": 600,
+    "one_saving": 359,
+    "higher_saving": 4,
+    "field_lower_bound": 9600,
+    "rank_layer_envelope_power_at_D": 21248
+  },
+  "controls": {
+    "actual_adjacent_plane_controls": [
+      {
+        "q": 13,
+        "D": 4,
+        "k": 3,
+        "sum_ki": 7,
+        "a": 1,
+        "all_pair_checks": 33,
+        "all_common_checks": 22,
+        "q_ge_16D": false
+      },
+      {
+        "q": 67,
+        "D": 4,
+        "k": 3,
+        "sum_ki": 7,
+        "a": 1,
+        "all_pair_checks": 33,
+        "all_common_checks": 22,
+        "q_ge_16D": true
+      }
+    ],
+    "q13_GL2": 26208,
+    "q13_first_line_bases": 1872,
+    "q3_complete_basis_pairs": 2304,
+    "q3_pattern_counts": {
+      "111,111,001,111": 576,
+      "111,111,111,001": 1728
+    },
+    "weighted_control": "81/121036303360",
+    "enlarged_not_residual_control": {
+      "pattern": [
+        "111",
+        "111",
+        "001",
+        "111",
+        "000",
+        "111"
+      ],
+      "k": 4,
+      "sum_ki": 9,
+      "a": 1,
+      "R_actual": 0,
+      "R_uniform": 2
+    }
+  },
+  "limitations": "Finite exact support for separate conventional proofs; no formal verification or template/host search."
+}

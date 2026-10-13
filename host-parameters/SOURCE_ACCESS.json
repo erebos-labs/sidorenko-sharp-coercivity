@@ -1,0 +1,399 @@
+{
+  "schema": 1,
+  "audit_version": "1.0.0",
+  "authoritative_release": "v1.4.0",
+  "authoritative_commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+  "bundled": [
+    {
+      "local_path": "LICENSE",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "LICENSE",
+      "bytes": 1068,
+      "sha256": "04690d463ba7d13b6b853229a5b1eefefd0b346e063a55967ba2f75f06038a6c",
+      "git_blob_sha1": "fd53c72f02b17b6c660b9a95144175fc4178f8b3",
+      "role": "Published MIT license applied to new contributions",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/defect-one/PROOF.md",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "defect-one/PROOF.md",
+      "bytes": 17846,
+      "sha256": "e18fe1d73e5b4d81f7b80da8555ed094ef684126d6d0d00f0867a295639497c6",
+      "git_blob_sha1": "8d5ec9c34cfa62d2a95dd6d7ebae82f0aad6fc27",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/defect-one/DOWNSTREAM.md",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "defect-one/DOWNSTREAM.md",
+      "bytes": 5556,
+      "sha256": "068d3b03a58a720a2e3895a94053838080481ba1124a63362522df5de27c5d8b",
+      "git_blob_sha1": "8c7a326d364021661b57eb85ab68dbcce8944e55",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/defect-one/STATUS.md",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "defect-one/STATUS.md",
+      "bytes": 2942,
+      "sha256": "2245dab589e43684e52fe6e48572805de179c0733768384e734ab44ffc5b0e46",
+      "git_blob_sha1": "90c1a9b7d52cb4123487756e58f613fe49d77c79",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/defect-one/SOURCES.json",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "defect-one/SOURCES.json",
+      "bytes": 4086,
+      "sha256": "48f9e3b17f7f080b3e042910fbaa2d0c7a835adc0c7a05cd8eadfccc519e3f7f",
+      "git_blob_sha1": "7e76d76b12ee5a2b1091f95b44fb86088ffb9344",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/defect-one/THIRD_PARTY_NOTICES.md",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "defect-one/THIRD_PARTY_NOTICES.md",
+      "bytes": 1802,
+      "sha256": "8180369e69bcc8c9e1f0b653a45c2cd04be0ef167dfd92b83f8c3c51439b81b9",
+      "git_blob_sha1": "da4d4c71a6ba32b1021b07293ece744d024d4b7f",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Restored exact current published bytes via git show at the claimed immutable commit; independent audit identified a stale pre-packaging notice in the original input."
+    },
+    {
+      "local_path": "inherited/defect-one/check_exact.py",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "defect-one/check_exact.py",
+      "bytes": 17870,
+      "sha256": "16bb19c4ac0e4ab2fd5987936d0ea7ab899bd9d70a2bcb73e18b1efe04343c29",
+      "git_blob_sha1": "0c7ee44daafce9730b1fe28ffa1de498e31d63ae",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/defect-one/test_mutations.py",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "defect-one/test_mutations.py",
+      "bytes": 4852,
+      "sha256": "1e65ef58a3d0845a936469c3ef26ffb1e82a6014ef1b94f62cd77cd3b66b92b1",
+      "git_blob_sha1": "f2b3dc9da8c6b108bf6974a536c4c57580361914",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/defect-one/certificates/controls.json",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "defect-one/certificates/controls.json",
+      "bytes": 138,
+      "sha256": "bfbefd7d9e7cd26dcd9a4c838dbc738900ec9250acd3cdfc0110f0c6c9d31212",
+      "git_blob_sha1": "ca07ad0773bb6071df183ed04ca6ced8e0e9f854",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/defect-one/certificates/proof_coefficients.json",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "defect-one/certificates/proof_coefficients.json",
+      "bytes": 656,
+      "sha256": "26c6e0c04f892ea1ad470e47a37b3279ce00e701af0decd3fea6a4f70698eee9",
+      "git_blob_sha1": "df38a7755b9338fab76918421f9df41c4866d94b",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/defect-one/certificates/template_and_budget.json",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "defect-one/certificates/template_and_budget.json",
+      "bytes": 4755,
+      "sha256": "3f65b8f3c8722d009150e4786d9712bac01a8cd46c145d093426022949ada76f",
+      "git_blob_sha1": "448f0f33b3a526da60a415c466b10d9e8add2a12",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/full-slack/THEOREM.md",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "full-slack/THEOREM.md",
+      "bytes": 12879,
+      "sha256": "b338965b94b074e0c57eb59ee7991a7e6bb928c6e698ab0ea3086e821cfde7a8",
+      "git_blob_sha1": "60a838160b402118aed8f109c659b30760ff50c8",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/full-slack/DOWNSTREAM.md",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "full-slack/DOWNSTREAM.md",
+      "bytes": 11263,
+      "sha256": "6df4a7408311940df30b683954c99e158703f86ea86597079f980c95163d5a95",
+      "git_blob_sha1": "b05884d7ce3e876e4b8fc6288ff2d3e0154ff0cb",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/full-slack/SOURCES.json",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "full-slack/SOURCES.json",
+      "bytes": 3915,
+      "sha256": "0b2cadf3ff21dabcfdc3f20ac7317b4fb3703471d46a4165eb16cc704ada5645",
+      "git_blob_sha1": "811949abdfea4314bfc34e38ab5736d098a824d0",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/full-slack/THIRD_PARTY_NOTICES.md",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "full-slack/THIRD_PARTY_NOTICES.md",
+      "bytes": 1762,
+      "sha256": "c3432283bba9185fc1d36aea58e8aa389614ee6b3ba6bfcfd3ccec59d3eff9e5",
+      "git_blob_sha1": "a698fee7a6f576074057400cb9edca39e794f42b",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Restored exact current published bytes via git show at the claimed immutable commit; independent audit identified a stale pre-packaging notice in the original input."
+    },
+    {
+      "local_path": "inherited/full-slack/original.json",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "full-slack/certificates/original.json",
+      "bytes": 37968,
+      "sha256": "833e0e40377fe931cabc8bf1bccda5d7c250818e146c8f66bce2dca4a2fe8b0b",
+      "git_blob_sha1": "5dffc66627bdfe1a51544addca9d40d85b1873a7",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/variance/THEOREM.md",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "variance/THEOREM.md",
+      "bytes": 12041,
+      "sha256": "095b40be10a3f5a5259a365f6bc7bbdd86dda58cc49c2f61e2249ec45ee01ad9",
+      "git_blob_sha1": "caaf4fe3f77f266bb17ee69d500dac8c9921bd6d",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/variance/DOWNSTREAM.md",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "variance/DOWNSTREAM.md",
+      "bytes": 15880,
+      "sha256": "add66719a7b0da22823c4bdc67a1ed9a86a47bf7c25fc12e2a3778744f67a913",
+      "git_blob_sha1": "922bebb56ffbef76723e048acd77848a61d1ee2f",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/variance/original_certificate.json",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "variance/original_certificate.json",
+      "bytes": 38616,
+      "sha256": "f89ead9132825c15ee11cff0ba7c29e0718f506b52310c77dc930765beadc99d",
+      "git_blob_sha1": "75f203c1895e92aaa60eaa429ae4483d5dba850a",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/defect-one/sources/openai/complex.tex",
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "repository_path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/complex.tex",
+      "bytes": 7236,
+      "sha256": "b7023c77ec390b3392617c51b1ca3d3ee70d707af6c71e82b0b56547513bbe8a",
+      "git_blob_sha1": "178b0e9da21867a727ea847dae8e537b9d719a70",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/defect-one/sources/openai/tail.tex",
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "repository_path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/tail.tex",
+      "bytes": 29882,
+      "sha256": "fd2417f6efa4394fc8ba410f0ecb79f260a204c911957c9789a7d9d1ae0e6150",
+      "git_blob_sha1": "dc11e07a592e70d3a13e3a005c72378c88edc351",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/defect-one/sources/openai/planted.tex",
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "repository_path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/planted.tex",
+      "bytes": 21612,
+      "sha256": "2336147f1d032c3d8b114883c593a2d98d03598d190256667ded2a4aee0c6c46",
+      "git_blob_sha1": "e1a4636e66361dae0f5918e1245950060535a83c",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/defect-one/sources/openai/LICENSE",
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "repository_path": "LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/defect-one/sources/published/THEOREM.md",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "8b350971095fda13884ea568d1914c1edd7fc966",
+      "repository_path": "full-slack/THEOREM.md",
+      "bytes": 12879,
+      "sha256": "b338965b94b074e0c57eb59ee7991a7e6bb928c6e698ab0ea3086e821cfde7a8",
+      "git_blob_sha1": "60a838160b402118aed8f109c659b30760ff50c8",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/defect-one/sources/published/DOWNSTREAM.md",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "8b350971095fda13884ea568d1914c1edd7fc966",
+      "repository_path": "full-slack/DOWNSTREAM.md",
+      "bytes": 11263,
+      "sha256": "6df4a7408311940df30b683954c99e158703f86ea86597079f980c95163d5a95",
+      "git_blob_sha1": "b05884d7ce3e876e4b8fc6288ff2d3e0154ff0cb",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/defect-one/sources/published/SOURCES.json",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "8b350971095fda13884ea568d1914c1edd7fc966",
+      "repository_path": "full-slack/SOURCES.json",
+      "bytes": 3915,
+      "sha256": "0b2cadf3ff21dabcfdc3f20ac7317b4fb3703471d46a4165eb16cc704ada5645",
+      "git_blob_sha1": "811949abdfea4314bfc34e38ab5736d098a824d0",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "inherited/defect-one/sources/published/LICENSE",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "8b350971095fda13884ea568d1914c1edd7fc966",
+      "repository_path": "LICENSE",
+      "bytes": 1068,
+      "sha256": "04690d463ba7d13b6b853229a5b1eefefd0b346e063a55967ba2f75f06038a6c",
+      "git_blob_sha1": "fd53c72f02b17b6c660b9a95144175fc4178f8b3",
+      "role": "Inherited definition, proof or exact data; not a new result",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "sources/pinned-packaging/verify_package.py",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "defect-one/verify_package.py",
+      "bytes": 3653,
+      "sha256": "17268d34b6ad6caad382b8cc9c0969962a8a3582b1eeb880963af4a8dadcccd4",
+      "git_blob_sha1": "a040e1dc5a1a153ad06cce24850812dab4361bf9",
+      "role": "Exact pinned verifier source; verify_manifest reused unchanged in root verifier",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    },
+    {
+      "local_path": "test_packaging.py",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "defect-one/test_packaging.py",
+      "bytes": 4057,
+      "sha256": "2d93696689efc21052eca850a0d017e4cf2bf31c93c6c99284d0d4a5ab488808",
+      "git_blob_sha1": "df303177618777a4b928ac47a2234942fc0225f4",
+      "role": "All 18 pinned strict-inventory rejection tests reused byte-for-byte",
+      "source_binding": "Full local bytes from a mounted earlier handoff or exact connector transcription; compared with immutable connector blob or published SHA256 manifest. This is source binding, not formal semantic verification."
+    }
+  ],
+  "remote_only": [
+    {
+      "repository": "artuskg/sidorenko-template-refinements",
+      "commit": "06acd4cf46bfe9086f9abc7d85b5c9f171480143",
+      "repository_path": "experiments/original-effective-host/recovered/PROOF.md",
+      "bytes": 80925,
+      "sha256": "20c917f8fbab9cc51a92d0a4c853ca2080541a9a15c116bd3343150993aaf031",
+      "git_blob_sha1": "e5f1aaef9c3020054f0221a5b5dedc8260d5d5e4",
+      "access": "Complete text accessed through overlapping read-only GitHub connector ranges. Sections 8-13 and necessary Sections 1-7 dependencies reviewed. Directory metadata confirms 80925 bytes and the blob ID.",
+      "sha256_status": "Expected SHA256 is supplied by user and immutable published ledgers. Independent whole-file local SHA256 calculation NOT_RUN: connector text was available, but no exact raw whole-file byte copy was locally obtained.",
+      "bundled": false,
+      "redistribution": "Not included: upstream redistribution permission not established."
+    },
+    {
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "variance/source-pins.json",
+      "access": "Read-only connector ledger read; relevant immutable dependencies followed; unrelated campaign-review references not treated as dependencies.",
+      "bundled": false,
+      "git_blob_sha1": "e0b793fca2a60c1a3c008a2ac9dc255121c3ae1b"
+    },
+    {
+      "repository": "artuskg/sidorenko-template-refinements",
+      "commit": "06acd4cf46bfe9086f9abc7d85b5c9f171480143",
+      "repository_path": "experiments/original-effective-host/recovered/source-pins.json",
+      "access": "Read-only connector ledger read; original complex/kernel/transverse/orbits/planted/tail dependencies followed. Comparator stubs and unrelated old 189 proof not used as mathematical premises.",
+      "bundled": false
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "repository_path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/kernel.tex",
+      "git_blob_sha1": "bbe11be8fffe968012060ec43e6aff597e922831",
+      "access": "Full-file read-only GitHub connector response; relevant kernel, normalization, reversal, pinning, orbit and sign interfaces reviewed.",
+      "bundled": false,
+      "local_sha256_status": "NOT_RUN; exact local full-file bytes not materialized."
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "repository_path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/transverse.tex",
+      "git_blob_sha1": "d4991976e630f117c8d85a7e22deb60643a2450d",
+      "access": "Full-file read-only GitHub connector response; relevant kernel, normalization, reversal, pinning, orbit and sign interfaces reviewed.",
+      "bundled": false,
+      "local_sha256_status": "NOT_RUN; exact local full-file bytes not materialized."
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "repository_path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/orbits.tex",
+      "git_blob_sha1": "7da7ee247b4be60c3baf545a2e0f78309a667ee0",
+      "access": "Full-file read-only GitHub connector response; relevant kernel, normalization, reversal, pinning, orbit and sign interfaces reviewed.",
+      "bundled": false,
+      "local_sha256_status": "NOT_RUN; exact local full-file bytes not materialized."
+    },
+    {
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1",
+      "repository_path": "defect-one/SHA256SUMS",
+      "git_blob_sha1": "8cd959c68092c94786060ff42107c52dff319165",
+      "access": "Pinned connector manifest read; used to compare inherited arithmetic, expected output and strict packaging bytes.",
+      "bundled": false
+    }
+  ],
+  "not_accessed_or_not_run": [
+    "No complete v1.4.0 repository/CI verifier run. Only explicitly bundled inherited arithmetic and controls rerun.",
+    "No original recovered checker.py/generator.py execution; arithmetic and map controls reimplemented in this audit.",
+    "No complete external manuscript local SHA256 recomputation.",
+    "No Lean dependency compilation, theorem-sized prime test, field, kernel, host or exhaustive graph/type-map search.",
+    "No unrelated template/campaign search."
+  ],
+  "licensing": "New code/proof MIT under published license. Copied Erebos Labs files preserve MIT. OpenAI copied files retain Apache-2.0 and notices. Unclear-license retained manuscript and code are references only."
+}

@@ -1,0 +1,99 @@
+{
+  "clean_inventory_files": 61,
+  "controls": [
+    {
+      "expected_failure": "Duplicate manifest entry:",
+      "name": "duplicate manifest entry",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_failure": "Manifest inventory mismatch",
+      "name": "unexpected ordinary file",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_failure": "Manifest inventory mismatch",
+      "name": "unexpected nested SHA256SUMS",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_failure": "Manifest inventory mismatch",
+      "name": "unexpected file under __pycache__",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_failure": "Manifest inventory mismatch",
+      "name": "unexpected nested cache file",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_failure": "Missing SHA256SUMS",
+      "name": "missing manifest",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_failure": "Missing manifest file: PROOF.md",
+      "name": "missing listed proof",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_failure": "SHA256 mismatch: PROOF.md",
+      "name": "changed listed proof",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_failure": "Malformed manifest digest",
+      "name": "invalid digest",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_failure": "Malformed manifest entry",
+      "name": "malformed line",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_failure": "Invalid manifest path:",
+      "name": "parent traversal",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_failure": "Invalid manifest path:",
+      "name": "absolute path",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_failure": "Invalid manifest path:",
+      "name": "noncanonical path",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_failure": "Invalid manifest path:",
+      "name": "backslash path",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_failure": "Manifest cannot list itself",
+      "name": "self-listed manifest",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_failure": "Symbolic link in package:",
+      "name": "unexpected file symlink",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_failure": "Symbolic link in package:",
+      "name": "unexpected directory symlink",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_failure": "Symbolic link in package: SHA256SUMS",
+      "name": "symlinked manifest",
+      "status": "REJECTED_AS_EXPECTED"
+    }
+  ],
+  "positive_controls": 1,
+  "rejection_controls": 18,
+  "scope": "Exact inventory regressions; no mathematical premises changed.",
+  "status": "PASS"
+}

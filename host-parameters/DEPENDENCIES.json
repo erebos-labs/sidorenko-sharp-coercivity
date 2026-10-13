@@ -1,0 +1,350 @@
+{
+  "schema": 1,
+  "retained_analytic_condition": "(RL) and its published geometric/probability/transverse premises; new transfer beyond RL is proved in PROOF.md.",
+  "ledger": [
+    {
+      "quantity": "Template",
+      "formula": "13 point + 22 face vertices; 66 incidences; 33 point pairs; 28 zero-excess pairs",
+      "dimension_dependence": "fixed",
+      "source": "[H] \u00a71; [R] certificates",
+      "audit_status": "Literal reconstruction and inherited tests rerun",
+      "note": "No change of template, cut distribution, or activity convention."
+    },
+    {
+      "quantity": "Dimension and rank",
+      "formula": "D=600; r=D/2=300",
+      "dimension_dependence": "new substitution",
+      "source": "[R] defect-one/DOWNSTREAM; [H] \u00a72,6",
+      "audit_status": "Exact conditions checked",
+      "note": "D even, r>1, r even; no q=1 mod4 requirement."
+    },
+    {
+      "quantity": "Signed layer normalizer",
+      "formula": "p_xi=n_xi/q^b(D)=[D choose r]_q q^(b(r)-b(D)) Pr(non-singular r-form of sign xi)",
+      "dimension_dependence": "D,r,q",
+      "source": "[H] \u00a72.1; OpenAI transverse",
+      "audit_status": "Definition, exponent and positivity audited",
+      "note": "n_xi is recomputed at the new dimension in the mathematical construction, not copied from D7296. No layer enumeration run."
+    },
+    {
+      "quantity": "Symmetric-space size",
+      "formula": "q^b(D), b(D)=D(D+1)/2",
+      "dimension_dependence": "D,q",
+      "source": "[H] \u00a72",
+      "audit_status": "Exact exponents checked",
+      "note": "Only b(D), not q^b(D), allocated."
+    },
+    {
+      "quantity": "Elementary count constants",
+      "formula": "Gaussian normalized count in[1,2], |GL_n|>=q^(n^2)/2; Lagrangian containment <=q^(-Dt+binom(t,2))",
+      "dimension_dependence": "fixed constants; variable exponents",
+      "source": "[H] \u00a72; [R] defect-one/PROOF",
+      "audit_status": "Inherited elementary count interfaces reviewed",
+      "note": "No extra upper containment constant."
+    },
+    {
+      "quantity": "Triple profile and conditional completion",
+      "formula": "128 q^-C; 256 q^(-C+b(h)); 128=4*32",
+      "dimension_dependence": "D in C; fixed padding",
+      "source": "[H] \u00a72.3",
+      "audit_status": "Retained orbit interface reviewed",
+      "note": "Conditional fresh point remains independent of the complete older sigma-field."
+    },
+    {
+      "quantity": "Individual orbit lower bound",
+      "formula": "2^(-D-15) q^-C; 15=4+5+3+3",
+      "dimension_dependence": "D",
+      "source": "[H] \u00a72.3",
+      "audit_status": "Premise/interface audited",
+      "note": "Every actual ordered orbit, not profile-averaged probability; residual dimension0 included."
+    },
+    {
+      "quantity": "Planted numerator",
+      "formula": "2^32, 32=2+1+9+17+3",
+      "dimension_dependence": "fixed padding",
+      "source": "[H] \u00a73.3",
+      "audit_status": "Arithmetic checked",
+      "note": "Common space, center, normalizers, subspaces and correlated-nullity factors retained."
+    },
+    {
+      "quantity": "Chosen gain g_j",
+      "formula": "Same maximum over complete necessary integer domain at new D,r; at most(D+1)^5 choices",
+      "dimension_dependence": "D,r",
+      "source": "[H] \u00a73.1; [R] full-slack/DOWNSTREAM",
+      "audit_status": "Domain transfer audited",
+      "note": "All per-index t_i,v bounds, integer/parity, w>=0, actual profile h, empty-domain zero, correlated b(v) cost retained."
+    },
+    {
+      "quantity": "Local gain prefactor A_D",
+      "formula": "2^(D+47)(D+1)^5; 47=32+15",
+      "dimension_dependence": "D",
+      "source": "[H] \u00a73.3",
+      "audit_status": "Exact arithmetic checked",
+      "note": "Applied once per22faces, not once per incidence or per type-map assignment."
+    },
+    {
+      "quantity": "Lower activities",
+      "formula": "0/1 active: gain0; 2 active: b(floor(h_active_pair/2)); 3 active: selected g_j",
+      "dimension_dependence": "D via pair dimension",
+      "source": "[H] \u00a73,4; [R] full-slack/DOWNSTREAM",
+      "audit_status": "Eight local cases preserved",
+      "note": "No substitution of max pair for actual gain except as a justified upper bound in inherited proof."
+    },
+    {
+      "quantity": "Chart multiplier",
+      "formula": "2^35 * 16^66=2^299",
+      "dimension_dependence": "fixed padding; q>=16D",
+      "source": "[H] \u00a72.2",
+      "audit_status": "Arithmetic and uniform interface checked",
+      "note": "Allows unbounded nonnegative singular integrand; no conditioned independence claim."
+    },
+    {
+      "quantity": "Transverse inequalities",
+      "formula": "r>1, D even>=12, max point degree6, q>=16D; n=D-1 and s<=6",
+      "dimension_dependence": "D,r,q",
+      "source": "[H] \u00a76; OpenAI transverse",
+      "audit_status": "D600 conditions checked",
+      "note": "1-2D/q>=7/8;1-6D/q>=5/8; s-b(D-1-s)<=-9 at D600."
+    },
+    {
+      "quantity": "Transverse padding",
+      "formula": "F3<=21,F2<=5,common bound128; L1error128Dq^-1/2; 22face telescope<2^159Dq^-1/2; joint sign model<=2^106Dq^-1/2; total<=2^170Dq^-1/2",
+      "dimension_dependence": "D in factor; fixed powers",
+      "source": "[H] \u00a76",
+      "audit_status": "Retained formulas reviewed",
+      "note": "21/5 bounded by128; joint TV2^39D; model8^22=2^66. No new constants optimized."
+    },
+    {
+      "quantity": "Saving profiles",
+      "formula": "2^87(D+1)^55 q^-1/6;87=7+10*8;55=33+22",
+      "dimension_dependence": "D",
+      "source": "[H] \u00a77.1",
+      "audit_status": "Included in budget",
+      "note": "Saving lattice1/6 from gains and coverages, not denominator of quadratic relaxation."
+    },
+    {
+      "quantity": "Integer mode removal",
+      "formula": "M<=50, even D>=12M",
+      "dimension_dependence": "D",
+      "source": "[R] full-slack/DOWNSTREAM and certificate",
+      "audit_status": "M50 inverse/margins rechecked; implication inherited",
+      "note": "Real-profile counterexample prevents removing integer premise."
+    },
+    {
+      "quantity": "Direct residual",
+      "formula": "2^56 q^-1",
+      "dimension_dependence": "fixed",
+      "source": "[H] \u00a77.3",
+      "audit_status": "Retained",
+      "note": "Counts support and basis effects, gain q^(2m) included."
+    },
+    {
+      "quantity": "Robust residual fallback",
+      "formula": "2^63 q^(-D+1196)",
+      "dimension_dependence": "D",
+      "source": "[H] \u00a77.4",
+      "audit_status": "Preserved, not used at D600",
+      "note": "m<=28, local correction<=468,1196=28^2-56+468; old final evenD>=1198 remains valid."
+    },
+    {
+      "quantity": "Defect-one residual",
+      "formula": "2^118 q^(-D+241)",
+      "dimension_dependence": "D",
+      "source": "[R] defect-one/PROOF",
+      "audit_status": "Pinned exact checker +14mutations rerun",
+      "note": "Complete weighted pattern partition before division; remainder241 and support/pattern constants retained."
+    },
+    {
+      "quantity": "Higher defect residual",
+      "formula": "2^63 q^(-2D+1196)",
+      "dimension_dependence": "D",
+      "source": "[R] defect-one/PROOF",
+      "audit_status": "Inherited exact checks rerun",
+      "note": "No missing sum over a,k_i; uniform weight bound before enlarging count."
+    },
+    {
+      "quantity": "Weighted tail envelope",
+      "formula": "2^88(D+1)^55 q^-1/6",
+      "dimension_dependence": "D",
+      "source": "[R] defect-one/DOWNSTREAM",
+      "audit_status": "Absorption checked",
+      "note": "2^118 term absorbed since2^(304-D)<=1; 2^57+2^63<2^64."
+    },
+    {
+      "quantity": "Full one-coordinate error",
+      "formula": "2^170D q^-1/2+2^299 A_D^22 T_D",
+      "dimension_dependence": "D",
+      "source": "[H] (6.14)",
+      "audit_status": "Retained complete interface",
+      "note": "Uniform in every activity/sign pattern and both orientations."
+    },
+    {
+      "quantity": "Post-tail rank coefficient",
+      "formula": "2^(22D+1421)(D+1)^165;1421=299+22*47+88;165=22*5+55",
+      "dimension_dependence": "D",
+      "source": "[R] defect-one/DOWNSTREAM",
+      "audit_status": "Exact identities checked",
+      "note": "No extra profile, mask, or maximizing tuple factor."
+    },
+    {
+      "quantity": "Published C_D",
+      "formula": "2^(32D+2048)(D+1)^256",
+      "dimension_dependence": "D",
+      "source": "[R] defect-one/DOWNSTREAM; [H](7.10)",
+      "audit_status": "Recomputed; formula unchanged",
+      "note": "Each two-term rank coefficient<=C_D/2; second ratio2^(10D+626)(D+1)^91, first spare32D+1877."
+    },
+    {
+      "quantity": "Activation support and signs",
+      "formula": "66 coordinates; |U_e|4; |M|7; |Gamma|6;theta1/2;one negative sigma at(0,0)",
+      "dimension_dependence": "fixed",
+      "source": "[H] \u00a78; OpenAI kernel",
+      "audit_status": "Exact support, law and moment checks",
+      "note": "Both branch weights1/2; nonincidence empty product1; all probabilities nonnegative and normalized."
+    },
+    {
+      "quantity": "Activation branch denominator",
+      "formula": "512=2^9",
+      "dimension_dependence": "fixed padding",
+      "source": "[H] \u00a78,11",
+      "audit_status": "Exact laws and coin budget checked",
+      "note": "Includes branch1/2, sign law2^-7, and theta1/2."
+    },
+    {
+      "quantity": "Label and identity coefficients",
+      "formula": "M_C=2^2178;2178=66*33;Cid=-4^-66=-2^-132",
+      "dimension_dependence": "fixed padding",
+      "source": "[H] \u00a78",
+      "audit_status": "254first moments,4374overlaps,33support intersections,66corner product checked",
+      "note": "Number of nonempty labelings bounded by(2^66-1)^33."
+    },
+    {
+      "quantity": "Refinement scores",
+      "formula": "4rounds;range[-666,1188];spread1854;base1856",
+      "dimension_dependence": "fixed padding",
+      "source": "[H] \u00a79",
+      "audit_status": "Rebuilt scores; universal square argument audited",
+      "note": "666=13*6^2+22*3^2;1188=66*18;1856=1854+2."
+    },
+    {
+      "quantity": "Score base and map count",
+      "formula": "T=2^2459;13^13*22^22<2^147;2459=147+2178+132+2",
+      "dimension_dependence": "fixed padding",
+      "source": "[H] \u00a79",
+      "audit_status": "Exact arithmetic and collapsed controls checked",
+      "note": "All part maps, not factorial/injective count. No map-count penalty for reverse coefficient or error averages."
+    },
+    {
+      "quantity": "Shifted score certificate",
+      "formula": "maxa127937502468,maxb20679552,maxell25601296520,Eid115295183886,Bpin1548347298342",
+      "dimension_dependence": "fixed",
+      "source": "[H] \u00a79",
+      "audit_status": "Entire arrays independently generated",
+      "note": "Certificate formulas included; scores not D-dependent."
+    },
+    {
+      "quantity": "Priors and whole-law thinning",
+      "formula": "pi_i=T^ai/ZI;nu_j=T^bj/ZJ;lambda_ij=T^-ell_ij",
+      "dimension_dependence": "fixed before q",
+      "source": "[H] \u00a79; OpenAI kernel",
+      "audit_status": "Normalization/positivity and moment formula audited",
+      "note": "T>=1, all exponents nonnegative; one lambda per source incidence even repeated type pairs. Mix with1, not0."
+    },
+    {
+      "quantity": "Pinning margin",
+      "formula": "Z=280+2459Bpin;280=132+147+1;m0=2^-Z",
+      "dimension_dependence": "fixed padding",
+      "source": "[H] \u00a79",
+      "audit_status": "Checked",
+      "note": "Competition<2^-134wid; identity=-2^-132wid; 3/4safety yields stated m0."
+    },
+    {
+      "quantity": "Dilution and both orientations",
+      "formula": "epsilon=2^(-Z-2181);2181=2178+3;alpha=m0epsilon^13=2^-A0;A0=14Z+28353",
+      "dimension_dependence": "fixed padding",
+      "source": "[H] \u00a710",
+      "audit_status": "Exponent and both-orientation argument audited",
+      "note": "28353=13*2181; intended13active types versus reverse22; epsilon^9 M_C<=m0/8."
+    },
+    {
+      "quantity": "Unscaled symmetric gap",
+      "formula": "Gamma=alpha/2=2^-Lambda;Lambda=A0+1",
+      "dimension_dependence": "fixed padding",
+      "source": "[H] \u00a710",
+      "audit_status": "Exact error identities checked",
+      "note": "a_inf b_inf<=1-7alpha/8; each finite error<=alpha/64; retained gap alpha/2."
+    },
+    {
+      "quantity": "Tensor error multiplier",
+      "formula": "H_c=66*2^2210;2210=34*65",
+      "dimension_dependence": "fixed padding",
+      "source": "[H] \u00a710",
+      "audit_status": "Checked",
+      "note": "66coordinate factors each<=2^34 once eta<=1; uniform before normalized average."
+    },
+    {
+      "quantity": "Complete prime threshold",
+      "formula": "J=64H_c C_D/alpha;Q0=16D+J^6;q odd prime>Q0",
+      "dimension_dependence": "D",
+      "source": "[H] \u00a710 specialized",
+      "audit_status": "Recomputed",
+      "note": "64=2^6;floor(q^(1/6))>=J; rank-layer qfloor alone insufficient."
+    },
+    {
+      "quantity": "Prime existence and dyadic upper bound",
+      "formula": "Q0>=2^16; q in(Q0,2Q0);J<2^FJ;Fq=6FJ+2",
+      "dimension_dependence": "D via FJ",
+      "source": "[H] \u00a713",
+      "audit_status": "Conventional prime lemma and exact padding checked",
+      "note": "No specific prime tested. h_D=ceil strict log2(D+1), coefficient66<2^7; outer+2 becauseq<4J^6."
+    },
+    {
+      "quantity": "Kernel bounds and scaling",
+      "formula": "W<=q^(7bD);V<=q^(14bD);U=V/q^(14bD);Delta_q=2^-Lambda q^(-924bD)",
+      "dimension_dependence": "D",
+      "source": "[H] \u00a711",
+      "audit_status": "Positivity, factorization, exponent audited",
+      "note": "924=66*14; K_xi<=q^bD by nonempty layer; crossed product uses disjoint source components."
+    },
+    {
+      "quantity": "Exact atom and clone denominator",
+      "formula": "308q^(132bD) atoms;Mclone=2^(Z+2181)ZI ZJ q^(132bD)",
+      "dimension_dependence": "D",
+      "source": "[H] \u00a711",
+      "audit_status": "Exact multiplicity identity and small nonzero-diagonal pushforward controls",
+      "note": "308=14*22;132=2*66; inactive samples retainunusedmatrixcoordinates."
+    },
+    {
+      "quantity": "Exact edge coin denominator",
+      "formula": "DW=512T^ellmax(n+n-)^7;Dcoin=DW^2q^(14bD)",
+      "dimension_dependence": "D,q",
+      "source": "[H] \u00a711",
+      "audit_status": "Coefficient/exponent audit",
+      "note": "New n_xi required; qcoin upper power42bD=(28+14)bD; two-powerpadding18."
+    },
+    {
+      "quantity": "Sampling loss",
+      "formula": "595/n+66/n=661/n;half-gap n>=1322/Delta_q",
+      "dimension_dependence": "fixed padding",
+      "source": "[H] \u00a712",
+      "audit_status": "All-map conventional proof and controls",
+      "note": "595=binom35,2;loopedge-densityloss66;repeatedimageedgesonecoin. No injective-only conclusion."
+    },
+    {
+      "quantity": "Fixed host order and acceptance",
+      "formula": "B=11+Lambda+924bD Fq;N=2^B;target1024/N; acceptance Npowers97,131",
+      "dimension_dependence": "D",
+      "source": "[H] \u00a712,13 specialized",
+      "audit_status": "Recomputed old/new checked",
+      "note": "2^11=2048>661+1024;Edeficit>1387/N;97=132-35,131=132-1."
+    },
+    {
+      "quantity": "Source-specific selection bounds",
+      "formula": "Latom=Z+2181+9+2459(maxa+maxb)+132bD Fq;Lcoin=18+4918ellmax+42bD Fq",
+      "dimension_dependence": "D",
+      "source": "[H] \u00a711 specialized",
+      "audit_status": "Exact exponents checked, powers not allocated",
+      "note": "9pays13*22;4918=2*2459; optional label/coin enumeration mathematically finite only."
+    }
+  ]
+}

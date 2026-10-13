@@ -1,0 +1,94 @@
+{
+  "independent_check_utc": "2026-10-13T14:38:05.526532+00:00",
+  "retained_manuscript_positive_check": {
+    "bytes": 80925,
+    "git_blob_sha1": "e5f1aaef9c3020054f0221a5b5dedc8260d5d5e4",
+    "sha256": "20c917f8fbab9cc51a92d0a4c853ca2080541a9a15c116bd3343150993aaf031",
+    "source_executed": false,
+    "status": "PASS"
+  },
+  "fresh_raw_sources": [
+    {
+      "url": "https://raw.githubusercontent.com/artuskg/sidorenko-template-refinements/06acd4cf46bfe9086f9abc7d85b5c9f171480143/experiments/original-effective-host/recovered/PROOF.md",
+      "bytes": 80925,
+      "sha256": "20c917f8fbab9cc51a92d0a4c853ca2080541a9a15c116bd3343150993aaf031",
+      "git_blob_sha1": "e5f1aaef9c3020054f0221a5b5dedc8260d5d5e4",
+      "source_executed": false
+    },
+    {
+      "url": "https://raw.githubusercontent.com/erebos-labs/sidorenko-sharp-coercivity/4844aba6a45ef725e2e15b25f9709640837b32c1/variance/source-pins.json",
+      "bytes": 14160,
+      "sha256": "47b9ced9b41e96c302446f8e8cb0377993b4bc81eb4607458e13d2fe7352f0f1",
+      "git_blob_sha1": "e0b793fca2a60c1a3c008a2ac9dc255121c3ae1b",
+      "source_executed": false
+    },
+    {
+      "url": "https://raw.githubusercontent.com/artuskg/sidorenko-template-refinements/06acd4cf46bfe9086f9abc7d85b5c9f171480143/experiments/original-effective-host/recovered/source-pins.json",
+      "bytes": 12627,
+      "sha256": "f54513802e76e3a22069561aee42c609a429fbd1972c73c3179dd3f414ca69aa",
+      "git_blob_sha1": "e9218b9dd0e7b0e8a7f683551a9daf6429dff23d",
+      "source_executed": false
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/kernel.tex",
+      "bytes": 28526,
+      "sha256": "ad58e1e12522ae296a6ff7213afee0098338577013f15e152d6ccc2990df2742",
+      "git_blob_sha1": "bbe11be8fffe968012060ec43e6aff597e922831",
+      "source_executed": false
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/transverse.tex",
+      "bytes": 27978,
+      "sha256": "fa9b058eb9a2b9b35c2fc479ee4367bd4ba6e4fdc01994180fc10af26a5a13c3",
+      "git_blob_sha1": "d4991976e630f117c8d85a7e22deb60643a2450d",
+      "source_executed": false
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/orbits.tex",
+      "bytes": 24078,
+      "sha256": "2092e51b78953d3fce5fa30fb1c5b5436f0cd158a291a5aeb180c98133b5333f",
+      "git_blob_sha1": "7da7ee247b4be60c3baf545a2e0f78309a667ee0",
+      "source_executed": false
+    },
+    {
+      "url": "https://raw.githubusercontent.com/erebos-labs/sidorenko-sharp-coercivity/4844aba6a45ef725e2e15b25f9709640837b32c1/defect-one/SHA256SUMS",
+      "bytes": 3123,
+      "sha256": "dc867119d306102b23a518aca5a496a9939b9e1d0596ccac724df0e3e97f6f2f",
+      "git_blob_sha1": "8cd959c68092c94786060ff42107c52dff319165",
+      "source_executed": false
+    }
+  ],
+  "restored_notices": [
+    {
+      "path": "inherited/defect-one/THIRD_PARTY_NOTICES.md",
+      "old_binding": {
+        "bytes": 1311,
+        "sha256": "1eb8d96a2b06bd876b821d91ca3604cc6b785c6efc5a3e74e6d2ae7d033d0fe8",
+        "git_blob_sha1": "ad817e6071b609b8cf3097e19e19213335c02f7a"
+      },
+      "new_binding": {
+        "bytes": 1802,
+        "sha256": "8180369e69bcc8c9e1f0b653a45c2cd04be0ef167dfd92b83f8c3c51439b81b9",
+        "git_blob_sha1": "da4d4c71a6ba32b1021b07293ece744d024d4b7f"
+      },
+      "repository_path": "defect-one/THIRD_PARTY_NOTICES.md",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1"
+    },
+    {
+      "path": "inherited/full-slack/THIRD_PARTY_NOTICES.md",
+      "old_binding": {
+        "bytes": 1388,
+        "sha256": "f364209b84763270883fb7423e2b473d4a723d006c6d27f70bc293570637118b",
+        "git_blob_sha1": "ee0407f1077fb540d571105a97dbb1b987e553b2"
+      },
+      "new_binding": {
+        "bytes": 1762,
+        "sha256": "c3432283bba9185fc1d36aea58e8aa389614ee6b3ba6bfcfd3ccec59d3eff9e5",
+        "git_blob_sha1": "a698fee7a6f576074057400cb9edca39e794f42b"
+      },
+      "repository_path": "full-slack/THIRD_PARTY_NOTICES.md",
+      "commit": "4844aba6a45ef725e2e15b25f9709640837b32c1"
+    }
+  ],
+  "external_cache_redistributed": false
+}
