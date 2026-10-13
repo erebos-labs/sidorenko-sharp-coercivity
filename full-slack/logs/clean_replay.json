@@ -1,0 +1,29 @@
+{
+  "jobs": [
+    {
+      "exit_code": 0,
+      "script": "checker.py",
+      "stdout_byte_identical": true,
+      "stdout_sha256": "6c75f26ad29b613da5a609d1a9a6ca809976b3c0ccd742fe6a493bf5091a9e29"
+    },
+    {
+      "exit_code": 0,
+      "script": "test_mutations.py",
+      "stdout_byte_identical": true,
+      "stdout_sha256": "ee948e6197ea7fb02cc80296b789e11bfa905868bcea1f2008046b4aa01beb27"
+    },
+    {
+      "exit_code": 0,
+      "script": "audit_exact.py",
+      "stdout_byte_identical": true,
+      "stdout_sha256": "222a1bb7a29ad20dfe2584ef2f921434f85e66d8a2a7a110a8b5b2f372ea4235"
+    }
+  ],
+  "new_working_directory": true,
+  "note": "This checks portability of the new handoff, not the full historical upstream verifier.",
+  "optimized_python_control": {
+    "expected_rejection_found": true,
+    "returncode": 1
+  },
+  "status": "PASS"
+}

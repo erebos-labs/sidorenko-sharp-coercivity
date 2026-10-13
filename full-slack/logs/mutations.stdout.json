@@ -1,0 +1,79 @@
+{
+  "controls": [
+    {
+      "expected_prefix": "sharp witness rejects C",
+      "name": "C lowered from 17/16 to 1",
+      "observed": "sharp witness rejects C",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_prefix": "identity: requested equivalence",
+      "name": "linear coefficient changed to 1/13",
+      "observed": "identity: requested equivalence; residual {'c': '-1/52', 'p0': '-1/156', 'p1': '-1/156', 'p2': '-1/156', 't0': '-1/156', 't1': '-1/156', 't2': '-1/156'}",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_prefix": "identity: m-u homogeneous certificate",
+      "name": "homogeneous certificate 17 changed to 16",
+      "observed": "identity: m-u homogeneous certificate; residual {'u*u': '-48', 'u*z': '36', 'v*v': '12', 'z*z': '-6'}",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_prefix": "feasibility: p+delta-v",
+      "name": "sharp tuple violates the individual v bounds",
+      "observed": "feasibility: p+delta-v 0",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_prefix": "sharp value: S",
+      "name": "incorrect full-slack sign/value",
+      "observed": "sharp value: S",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_prefix": "source Git blob:",
+      "name": "published source byte appended",
+      "observed": "source Git blob: sources/published/variance/THEOREM.md",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_prefix": "global constant Gamma",
+      "name": "additive global constant omitted",
+      "observed": "global constant Gamma",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_prefix": "new global linear vector",
+      "name": "old linear vector substituted",
+      "observed": "new global linear vector",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_prefix": "inverse product",
+      "name": "inverse diagonal entry changed by one",
+      "observed": "inverse product (0, 0)",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_prefix": "coordinate inequality",
+      "name": "strict coordinate threshold lowered to 50",
+      "observed": "coordinate inequality 4",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_prefix": "retained nondirect saving threshold",
+      "name": "mode-removal dimension used as final dimension",
+      "observed": "retained nondirect saving threshold",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "expected_prefix": "retained residual constant unchanged",
+      "name": "1196 replaced by unretained 189",
+      "observed": "retained residual constant unchanged",
+      "status": "REJECTED_AS_EXPECTED"
+    }
+  ],
+  "limits": "Only these targeted corruptions were tested; this is not checker completeness or formal verification.",
+  "mutations": 12,
+  "status": "PASS"
+}

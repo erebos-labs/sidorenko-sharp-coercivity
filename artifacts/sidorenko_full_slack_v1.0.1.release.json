@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-13T09:43:18.973916+00:00",
+  "repository_version": "v1.3.0",
+  "package_version": "1.0.1",
+  "mathematical_handoff_version": "1.0.0",
+  "archive": {
+    "name": "sidorenko_full_slack_v1.0.1.zip",
+    "sha256": "95ba9115ff88b93e2d875e9bfc5e17e4042c96ce0f9376ce1a8a211db8db45ce",
+    "bytes": 109553,
+    "regular_entries": 42
+  },
+  "manifest_sha256": "99e4ddf8d9576defdc30177ba336c3899b5a6acaa0ddc71973a8bb061b10e630",
+  "approved_packaging_candidate_sha256": "1e6f1781f400d8f6a4e88b2d0ec3d586c8acf5e4bd79ff0ced675f1248a8032b",
+  "original_handoff_sha256": "b6626b2b17fdf46b3bf2773232b243b7054689a77ce148545123a4a6c875fcfb",
+  "baseline_commit": "1b6abc821b7fb95cc0ca71ba804e0c4ae19df4e4",
+  "new_contributions_license": "MIT; exact existing repository license",
+  "third_party_licenses": "Preserved MIT and Apache-2.0",
+  "local_replay": {
+    "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "status": "PASS",
+    "manifest_files": 41,
+    "packaging_rejections": 18,
+    "targeted_math_mutations": 12,
+    "historical_math_JSON_matches": true
+  },
+  "self_contained_offline_new_package_replay": true,
+  "historical_repository_replay_requires_external_cache": true,
+  "sources_or_cache_redistributed": "Only eight licensed bundled sources; no external cache",
+  "fetched_programs_executed": false,
+  "claim_scope": {
+    "full_slack": "S >= V/48 - (3c+P+T)/12 - 17/16 on unchanged relaxed real domain",
+    "C_sharp": "17/16 at coefficient1/12",
+    "M": 50,
+    "mode_even_D": 600,
+    "sufficient_even_D": 1198,
+    "retained_residual": 1196,
+    "conditional_analytic_inputs": true
+  },
+  "not_claimed": [
+    "Complete smaller counterexample",
+    "Optimal dimension or global optimum",
+    "Novelty/global priority",
+    "Geometric realization",
+    "Finite-host recalculation",
+    "Lean verification",
+    "Independent human acceptance"
+  ],
+  "CI_record": "Hosted verification is checked on the release commit; consult GitHub Actions for terminal results.",
+  "public_receipt_redaction": "Session-specific historical program paths made package-relative; original archived/audited receipt and historical hashes, times and math outputs preserved."
+}

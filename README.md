@@ -1,6 +1,6 @@
 # Sidorenko sharp relaxed coercivity
 
-An **Erebos Labs** AI-assisted mathematics project with two sharp bounds on
+An **Erebos Labs** AI-assisted mathematics project with three sharp bounds on
 the original necessary real relaxation of the pinned OpenAI source:
 
 | Quadratic denominator | Sharp coefficient | Proof |
@@ -11,6 +11,25 @@ the original necessary real relaxation of the pinned OpenAI source:
 These have different denominators. The original 1/40 result and its
 [v1.1.0 release](https://github.com/erebos-labs/sidorenko-sharp-coercivity/releases/tag/v1.1.0)
 remain unchanged.
+
+The [full-slack theorem](full-slack/THEOREM.md), using the unchanged full
+linear loss and exactly the same relaxed real domain, gives
+
+\[
+S\ge V/48-(3c+P+T)/12-17/16.
+\]
+
+The additive constant 17/16 is sharp at coefficient 1/12, and no finite
+constant permits a smaller linear coefficient. Equality is precisely
+c=d=delta=v=5/2, all p_i=0, all t_i=1/2, with V=0. The supplied positive-V
+family approaches the same infimum.
+
+The [new conditional application](full-slack/DOWNSTREAM.md) keeps the same
+35-vertex template and gives M<=50, integer mode removal at even D>=600,
+and sufficient **even D>=1198** with the retained residual1196.
+600 is the mode-removal threshold; 1198 clears the retained analytic bound.
+All gain domains, integer premises and geometric/probability/transverse
+interfaces remain explicit. This is not a complete smaller counterexample.
 
 For V>0, equality in Q>=V/48 is exactly, up to permutation,
 c=delta=v=0, p=t=(a,0,0), a>0, d>=2a. The stronger auxiliary bound is
@@ -23,7 +42,7 @@ integer profiles and the inherited geometric/probability/transverse inputs.
 This is an analytic sufficient-dimension certificate, not a reconstructed
 smaller complete counterexample or an optimal dimension claim.
 
-## Reproduce both results
+## Reproduce all three packages
 
 Python 3.9 or newer; standard library only:
 
@@ -35,6 +54,14 @@ The command first checks the unchanged original package and controls, then
 verifies the variance manifest and all 23 immutable source bindings, performs
 full mathematical/mutation/independent replay, and requires byte-identical
 certificate regeneration. CI runs this on Python 3.9 and 3.14.
+It then replays the full-slack package: 46 local and 10 downstream identities,
+21 examples, the matrix certificate, 12 mathematical mutation controls and
+18 packaging rejection controls. The isolated full-slack replay is also
+self-contained offline:
+
+~~~sh
+python3 -I -B full-slack/verify_package.py
+~~~
 
 **Full variance replay requires 18 external files.** The repository and ZIP
 are not a self-contained offline full replay. They omit refinement snapshots
@@ -65,6 +92,12 @@ Repository [v1.2.0](https://github.com/erebos-labs/sidorenko-sharp-coercivity/re
 publishes reviewed variance package 1.0.1, its checksum and portable receipt.
 The tracked variance/ tree matches that ZIP member for member. Release ZIPs
 are assets, not Git blobs.
+
+Repository [v1.3.0](https://github.com/erebos-labs/sidorenko-sharp-coercivity/releases/tag/v1.3.0)
+publishes full-slack package **1.0.1** and its checksum/receipt. Repository
+and standalone package versions are distinct. The tracked full-slack/ tree
+matches that ZIP member for member; v1.2.0 and its variance files remain
+unchanged. Use the same downloaded-asset verification with v1.3.0.
 
 ~~~sh
 gh release download v1.2.0 --repo erebos-labs/sidorenko-sharp-coercivity --dir release-assets

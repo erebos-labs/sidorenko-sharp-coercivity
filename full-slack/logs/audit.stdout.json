@@ -1,0 +1,12 @@
+{
+  "Gamma": "187/8",
+  "H": "8015311981535/67639553976",
+  "additional_mixed_hinge_regressions": 24,
+  "direct_rational_ellipsoid_coordinates": 33,
+  "final_even_D": 1198,
+  "full_slack_examples": 21,
+  "independent_Fraction_Gaussian_inverse_entries": 1089,
+  "minimum_direct_squared_margin": "5562400696417/33819776988",
+  "review_status": "Same-session separate implementation, not independent human acceptance or a formal proof.",
+  "status": "PASS"
+}

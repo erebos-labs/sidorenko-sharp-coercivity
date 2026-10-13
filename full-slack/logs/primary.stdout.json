@@ -1,0 +1,144 @@
+{
+  "downstream": {
+    "B": 51,
+    "Gamma": "187/8",
+    "Hnum": 96183743778420,
+    "M_bound": 50,
+    "Psi": 172075323339492,
+    "activity_cases": [
+      {
+        "active_count": 0,
+        "argument": "inherited integer lower-activity bound plus exact comparison",
+        "constant": "0",
+        "mask": 0
+      },
+      {
+        "active_count": 1,
+        "argument": "inherited integer lower-activity bound plus exact comparison",
+        "constant": "0",
+        "mask": 1
+      },
+      {
+        "active_count": 1,
+        "argument": "inherited integer lower-activity bound plus exact comparison",
+        "constant": "0",
+        "mask": 2
+      },
+      {
+        "active_count": 2,
+        "argument": "inherited integer lower-activity bound plus exact comparison",
+        "constant": "0",
+        "mask": 3
+      },
+      {
+        "active_count": 1,
+        "argument": "inherited integer lower-activity bound plus exact comparison",
+        "constant": "0",
+        "mask": 4
+      },
+      {
+        "active_count": 2,
+        "argument": "inherited integer lower-activity bound plus exact comparison",
+        "constant": "0",
+        "mask": 5
+      },
+      {
+        "active_count": 2,
+        "argument": "inherited integer lower-activity bound plus exact comparison",
+        "constant": "0",
+        "mask": 6
+      },
+      {
+        "active_count": 3,
+        "argument": "new all-real bound",
+        "constant": "17/16",
+        "mask": 7
+      }
+    ],
+    "identity_labels": [
+      "range variance bound",
+      "all lower activity cases, no constant",
+      "unchanged integer mode identity",
+      "mode bracket one",
+      "mode bracket two",
+      "unchanged integer base square",
+      "global linear term keeps excess",
+      "ellipsoid radius normalization",
+      "fractional local slack control",
+      "fractional global counterprofile to real mode removal"
+    ],
+    "inherited_coordinate_checks": 33,
+    "inverse_entries": 1089,
+    "min_linear_margin": 9783442206276,
+    "min_squared_margin": 3009906417131501290431936,
+    "mode_removal_D": 600,
+    "new_coordinate_checks": 33,
+    "nondirect_saving": 2,
+    "pair_coordinates": 33,
+    "retained_residual": 1196,
+    "sufficient_even_D": 1198,
+    "symbolic_identities": 10
+  },
+  "limits": "Finite exact arithmetic supports the separate conventional proofs; no Lean or independent human verification.",
+  "local": {
+    "C": "17/16",
+    "feasible_examples": 21,
+    "identity_labels": [
+      "published slack versus baseline and planted maximand",
+      "requested equivalence",
+      "c coefficient sign decomposition",
+      "d+3delta nonnegativity identity",
+      "positive c reduction",
+      "negative c reduction",
+      "sharp ray Q",
+      "sharp ray V",
+      "obstruction to smaller linear coefficient",
+      "delta-zero variable remainder",
+      "delta-zero affine completion",
+      "negative delta shift Q",
+      "variance translation invariance",
+      "negative delta linear shift",
+      "negative delta square",
+      "positive delta 24W expansion",
+      "strict p coefficient",
+      "exact nonnegative p-reduction gap",
+      "hinge form identity with zero hinge-complement product",
+      "exact symmetrization gap",
+      "hinge squared Jensen sign identity",
+      "s Jensen sign identity",
+      "absolute-value contraction (-1, -1)",
+      "absolute-value contraction (-1, 1)",
+      "absolute-value contraction (1, -1)",
+      "absolute-value contraction (1, 1)",
+      "symmetric residual J",
+      "symmetric linear functional",
+      "scalar reduction v<=delta",
+      "scalar reduction v>=delta",
+      "m-u homogeneous certificate",
+      "m-delta reduction {}",
+      "m-delta reduction {'u': '3', 'v': '-2'}",
+      "m-v positive-e certificate",
+      "m-v zero-e certificate",
+      "m-u bracket one positivity",
+      "m-u bracket two positivity",
+      "m-delta bracket positivity",
+      "m-v bracket positivity",
+      "sharp C affine completion",
+      "sharp common-mode family Q",
+      "sharp common-mode family ell",
+      "sharp common-mode family completion",
+      "positive-variance limiting family V",
+      "positive-variance limiting family remainder",
+      "fully coincident negative slack"
+    ],
+    "negative_slack_examples": 11,
+    "polynomial_identities": 46,
+    "sharp_V": "0",
+    "sharp_remainder": "-17/16"
+  },
+  "sources": {
+    "binding": "SHA-256 and immutable Git blob SHA-1",
+    "source_files": 8
+  },
+  "status": "PASS"
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify both frozen theorems, exact source-cache replay and optional assets."""
+"""Verify frozen coercivity, variance and full-slack packages and optional assets."""
 import argparse
 import hashlib
 import importlib.util
@@ -14,11 +14,16 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 VARIANCE_ARCHIVE = "sidorenko_variance_v1.0.1.zip"
 VARIANCE_SHA256 = "b8befea81b161205fee8ec90413ad368b50532a287862aa77ee0999d3325ddf1"
+FULL_SLACK_ARCHIVE = "sidorenko_full_slack_v1.0.1.zip"
+FULL_SLACK_SHA256 = "95ba9115ff88b93e2d875e9bfc5e17e4042c96ce0f9376ce1a8a211db8db45ce"
 FROZEN = {
     "tools/verify_coercivity.py": "88f7aa8c8ddba92c071db120d695d767d221ebbad52e25b63abad02392971bf4",
     "variance/SHA256SUMS": "175ec3bce6e7da5e946ab6de9a347729cf822289c0063b837fb8b1c4990eb4c7",
     "artifacts/sidorenko_variance_v1.0.1.sha256": "6312fced34d9948ff41defaa5030d7d14c5a9b97809e276c1eea74670aa22da6",
     "artifacts/sidorenko_variance_v1.0.1.release.json": "1c509ba7954168d2b9378f80456cc42d1eedcc8f03bea162623c60655d37d46a",
+    "full-slack/SHA256SUMS": "99e4ddf8d9576defdc30177ba336c3899b5a6acaa0ddc71973a8bb061b10e630",
+    "artifacts/sidorenko_full_slack_v1.0.1.sha256": "1e2a83d4752f0d69d1593a39e913c1210fb66711758f26f03e38c99816f89f66",
+    "artifacts/sidorenko_full_slack_v1.0.1.release.json": "5dd8d1ef7dac29076a78d6c25c62e20fa0a1500da875fd9ce908fd8dc932636a",
 }
 
 
@@ -55,6 +60,44 @@ def bindings():
             and inventory["retained_source_checks"] == 5
             and inventory["external_sources_required"] == 18, "Variance inventory boundary changed")
     print("PASS frozen variance manifest, licenses, metadata and 5/18 source partition", flush=True)
+    require((ROOT/"LICENSE").read_bytes() == (ROOT/"full-slack/LICENSE").read_bytes(),
+            "Full-slack contribution license differs")
+    spec = importlib.util.spec_from_file_location("full_slack_inventory",ROOT/"full-slack/verify_package.py")
+    package = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(package)
+    require(package.verify_manifest() == 41,"Full-slack inventory differs")
+    receipt = json.loads((ROOT/"artifacts"/FULL_SLACK_ARCHIVE.replace(".zip",".release.json")).read_text())
+    require(receipt["archive"]["sha256"] == FULL_SLACK_SHA256
+            and receipt["repository_version"] == "v1.3.0"
+            and receipt["package_version"] == "1.0.1"
+            and receipt["self_contained_offline_new_package_replay"]
+            and not receipt["fetched_programs_executed"],"Full-slack release receipt differs")
+    print("PASS frozen full-slack manifest, MIT/Apache notices and release metadata",flush=True)
+
+
+def verify_full_slack_assets(folder):
+    require(sha((folder/FULL_SLACK_ARCHIVE).read_bytes()) == FULL_SLACK_SHA256,"Full-slack ZIP hash differs")
+    for suffix in (".sha256",".release.json"):
+        name = FULL_SLACK_ARCHIVE.replace(".zip",suffix)
+        require((folder/name).read_bytes() == (ROOT/"artifacts"/name).read_bytes(),
+                "Full-slack asset metadata differs: " + name)
+    seen=set()
+    with zipfile.ZipFile(folder/FULL_SLACK_ARCHIVE) as z:
+        require(z.testzip() is None,"Full-slack ZIP CRC failure")
+        for entry in z.infolist():
+            path=PurePosixPath(entry.filename)
+            require(not path.is_absolute() and ".." not in path.parts and "\\" not in entry.filename
+                    and len(path.parts)>1 and path.parts[0]=="sidorenko_full_slack_v1.0.1"
+                    and stat.S_ISREG(entry.external_attr>>16) and not entry.flag_bits&1,
+                    "Unsafe full-slack ZIP member")
+            name=PurePosixPath(*path.parts[1:]).as_posix()
+            require(name not in seen,"Duplicate full-slack ZIP member")
+            seen.add(name)
+            require(z.read(entry)==(ROOT/"full-slack"/name).read_bytes(),
+                    "Full-slack ZIP/repository bytes differ: "+name)
+    files={p.relative_to(ROOT/"full-slack").as_posix() for p in (ROOT/"full-slack").rglob("*") if p.is_file()}
+    require(seen==files,"Full-slack ZIP/repository coverage differs")
+    print("PASS full-slack ZIP hash, checksum, receipt and all "+str(len(seen))+" package files",flush=True)
 
 
 def verify_variance_assets(folder):
@@ -86,6 +129,9 @@ def verify_variance_assets(folder):
 
 def assets(folder):
     found = False
+    if (folder/FULL_SLACK_ARCHIVE).is_file():
+        verify_full_slack_assets(folder)
+        found = True
     if (folder/VARIANCE_ARCHIVE).is_file():
         verify_variance_assets(folder)
         found = True
@@ -135,12 +181,19 @@ def main():
         else:
             with TemporaryDirectory(prefix="sidorenko-public-source-cache-") as tmp:
                 replay(Path(tmp).resolve())
+        full = json.loads(run([ROOT/"full-slack/verify_package.py"]))
+        require(full["status"]=="PASS" and full["manifest_files"]==41
+                and len(full["fresh_working_directory_replay"])==3
+                and all(check["recorded_JSON_matches"] for check in full["fresh_working_directory_replay"])
+                and full["packaging_controls"]["rejection_controls"]==18
+                and full["optimized_execution"]=="REJECTED_AS_EXPECTED","Full-slack replay failed")
+        print("PASS full-slack: 46 local/10 downstream identities, 21 examples, 12 math mutations and 18 packaging rejections",flush=True)
     if args.release_dir:
         assets(args.release_dir.resolve())
     if args.assets_only:
         print("PASS downloaded assets; arithmetic NOT_RUN in assets-only mode",flush=True)
     else:
-        print("PASS both theorems and scoped conditional variance certificate; conventional proof remains necessary",flush=True)
+        print("PASS all three packages and scoped conditional certificates; conventional proofs remain necessary",flush=True)
 
 
 if __name__ == "__main__":

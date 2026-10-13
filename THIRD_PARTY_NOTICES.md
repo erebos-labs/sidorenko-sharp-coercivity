@@ -23,3 +23,11 @@ The 18 unclear-license refinement sources are citation-only in the public
 tree and release ZIP. Their exact repository/commit/path/hash metadata is
 retained. Optional local retrieval does not grant redistribution permission;
 neither the external source cache nor raw API/PR snapshots are released.
+
+The full-slack package in full-slack/ uses the exact top-level MIT license
+for its new original proof, prose, programs and packaging tests. Its copied
+published theorem/certificate retains the unaltered MIT source notice; its
+three copied OpenAI sections retain Apache-2.0. See
+full-slack/THIRD_PARTY_NOTICES.md and the unchanged licenses under
+full-slack/sources/. The standalone new-package replay is offline; no
+unclear-license external source cache is distributed with it.

@@ -1,0 +1,58 @@
+{
+  "executed_at_utc": "2026-10-13T07:48:52.536887+00:00",
+  "handoff_version": "1.0.0",
+  "inputs": {
+    "certificates/local.json": "bc855fbefa150bd67c8d568b1aad2729ed6b26136ceca0abb1cf7533ed2afff2",
+    "certificates/original.json": "833e0e40377fe931cabc8bf1bccda5d7c250818e146c8f66bce2dca4a2fe8b0b"
+  },
+  "jobs": [
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-I",
+        "-B",
+        "checker.py"
+      ],
+      "elapsed_seconds": 0.8343384539998624,
+      "returncode": 0,
+      "script": "checker.py",
+      "script_sha256": "a1d945c18b5bd9386327b204f1b2a024e9ef46c4482d39e31cdf2393b471b697",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "6c75f26ad29b613da5a609d1a9a6ca809976b3c0ccd742fe6a493bf5091a9e29"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-I",
+        "-B",
+        "test_mutations.py"
+      ],
+      "elapsed_seconds": 0.9332149970000501,
+      "returncode": 0,
+      "script": "test_mutations.py",
+      "script_sha256": "5a728b8cccf9735de0a034ec80406adfa09c418ee948a520e200c3735c3a2bc8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ee948e6197ea7fb02cc80296b789e11bfa905868bcea1f2008046b4aa01beb27"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-I",
+        "-B",
+        "audit_exact.py"
+      ],
+      "elapsed_seconds": 0.9155836860002182,
+      "returncode": 0,
+      "script": "audit_exact.py",
+      "script_sha256": "b8b2d72449f14740edfb610b7997a530a2f9933e825e3e8026419381787462ac",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "222a1bb7a29ad20dfe2584ef2f921434f85e66d8a2a7a110a8b5b2f372ea4235"
+    }
+  ],
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "prior_variance_archive_sha256": "79fecb74de0e592cd25f9f89de43646f8753e679dda24f0c928ac370d1f65c14",
+  "python": "3.13.5",
+  "review_status": "same-session conventional proof and adversarial arithmetic audit; not independent human or formal verification",
+  "source_bindings": "eight immutable source Git blobs and SHA256 checked by primary",
+  "public_path_redaction": "Original session-specific absolute program paths replaced with package-relative equivalents. Historical times, exit codes and file/output hashes are unchanged."
+}

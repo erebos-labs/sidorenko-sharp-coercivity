@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-13T09:22:34.738333+00:00",
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "scope": "Actual mathematical component replays on corrected local package; packaging and final ZIP replays are recorded externally in the preparation directory.",
+  "jobs": [
+    {
+      "command": [
+        "python3",
+        "-I",
+        "-B",
+        "checker.py"
+      ],
+      "started_utc": "2026-10-13T09:22:34.546389+00:00",
+      "returncode": 0,
+      "stderr_bytes": 0,
+      "elapsed_seconds": 0.060939625138416886,
+      "script_sha256": "a1d945c18b5bd9386327b204f1b2a024e9ef46c4482d39e31cdf2393b471b697",
+      "stdout_sha256": "6c75f26ad29b613da5a609d1a9a6ca809976b3c0ccd742fe6a493bf5091a9e29",
+      "recorded_historical_JSON_matches": true
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "-B",
+        "test_mutations.py"
+      ],
+      "started_utc": "2026-10-13T09:22:34.607474+00:00",
+      "returncode": 0,
+      "stderr_bytes": 0,
+      "elapsed_seconds": 0.0742235837969929,
+      "script_sha256": "5a728b8cccf9735de0a034ec80406adfa09c418ee948a520e200c3735c3a2bc8",
+      "stdout_sha256": "ee948e6197ea7fb02cc80296b789e11bfa905868bcea1f2008046b4aa01beb27",
+      "recorded_historical_JSON_matches": true
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "-B",
+        "audit_exact.py"
+      ],
+      "started_utc": "2026-10-13T09:22:34.681752+00:00",
+      "returncode": 0,
+      "stderr_bytes": 0,
+      "elapsed_seconds": 0.05635254201479256,
+      "script_sha256": "b8b2d72449f14740edfb610b7997a530a2f9933e825e3e8026419381787462ac",
+      "stdout_sha256": "222a1bb7a29ad20dfe2584ef2f921434f85e66d8a2a7a110a8b5b2f372ea4235",
+      "recorded_historical_JSON_matches": true
+    }
+  ],
+  "version": "1.0.1-rc1",
+  "math_handoff": "1.0.0",
+  "baseline_commit": "1b6abc821b7fb95cc0ca71ba804e0c4ae19df4e4",
+  "license_origin": "Exact pinned repository MIT LICENSE; new contributions licensed consistently under operator instruction",
+  "root_LICENSE_sha256": "04690d463ba7d13b6b853229a5b1eefefd0b346e063a55967ba2f75f06038a6c",
+  "not_published": true,
+  "command_path_format": "Package-relative command equivalents; actual programs ran by absolute path from disposable working directories.",
+  "interpreter": "/opt/homebrew/opt/python@3.14/bin/python3.14"
+}
