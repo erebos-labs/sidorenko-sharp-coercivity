@@ -1,0 +1,29 @@
+[
+  {
+    "name": "release-controls",
+    "started_utc": "2026-10-13T00:50:47.842683+00:00",
+    "finished_utc": "2026-10-13T00:50:48.198739+00:00",
+    "exit_code": 0,
+    "context": "Staged release candidate; separate verified source cache; isolated Python, bytecode disabled",
+    "stderr_bytes": 0,
+    "stdout_sha256": "10294f33239821053192d0e0fbb669819da0914759db615964d3d311db39ed9f"
+  },
+  {
+    "name": "cache-hit-fetch",
+    "started_utc": "2026-10-13T00:50:48.199194+00:00",
+    "finished_utc": "2026-10-13T00:50:48.290680+00:00",
+    "exit_code": 0,
+    "context": "Staged release candidate; separate verified source cache; isolated Python, bytecode disabled",
+    "stderr_bytes": 0,
+    "stdout_sha256": "8f8194969fbcb8142dc00450397bfb7539ef13581a237f970cb01a7778694f96"
+  },
+  {
+    "name": "staged-full-replay-fixed",
+    "started_utc": "2026-10-13T00:50:48.291121+00:00",
+    "finished_utc": "2026-10-13T00:50:52.578172+00:00",
+    "exit_code": 0,
+    "context": "Staged release candidate; separate verified source cache; isolated Python, bytecode disabled",
+    "stderr_bytes": 0,
+    "stdout_sha256": "64a99c867e1c9a685a395d5ddd9ebe6c3c9dc1c4db3813d842086b42ed4aa246"
+  }
+]

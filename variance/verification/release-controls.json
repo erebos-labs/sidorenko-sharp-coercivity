@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "control": "inventory_does_not_claim_full_replay",
+      "outcome": "PASS"
+    },
+    {
+      "control": "cache_required_no_false_full_pass",
+      "outcome": "REJECTED"
+    },
+    {
+      "control": "changed_public_proof_bytes",
+      "outcome": "REJECTED",
+      "expected": "Checksum mismatch"
+    },
+    {
+      "control": "unexpected_public_file",
+      "outcome": "REJECTED",
+      "expected": "exact package"
+    },
+    {
+      "control": "excluded_snapshot_even_with_rebuilt_manifest",
+      "outcome": "REJECTED",
+      "expected": "Excluded source redistributed"
+    },
+    {
+      "control": "changed_MIT_notices_even_with_rebuilt_manifest",
+      "outcome": "REJECTED",
+      "expected": "Prior MIT notice"
+    },
+    {
+      "control": "changed_original_source_bindings",
+      "outcome": "REJECTED",
+      "expected": "Original source bindings changed"
+    },
+    {
+      "control": "cache_inside_package",
+      "outcome": "REJECTED",
+      "expected": "separate cache"
+    },
+    {
+      "control": "cache_is_package_ancestor",
+      "outcome": "REJECTED",
+      "expected": "separate cache"
+    },
+    {
+      "control": "missing_external_source",
+      "outcome": "REJECTED",
+      "expected": "Missing or unsafe source"
+    },
+    {
+      "control": "same_length_cache_corruption",
+      "outcome": "REJECTED",
+      "expected": "Source SHA-256"
+    },
+    {
+      "control": "symlink_cache_source",
+      "outcome": "REJECTED",
+      "expected": "Symlink source path"
+    },
+    {
+      "control": "floating_download_ref",
+      "outcome": "REJECTED",
+      "expected": "Immutable commit"
+    },
+    {
+      "control": "download_path_traversal",
+      "outcome": "REJECTED",
+      "expected": "Unsafe relative path"
+    },
+    {
+      "control": "unapproved_download_repository",
+      "outcome": "REJECTED",
+      "expected": "Unapproved external repository"
+    },
+    {
+      "control": "download_redirect",
+      "outcome": "REJECTED",
+      "expected": "Unexpected source redirect"
+    },
+    {
+      "control": "download_response_checks_and_writes",
+      "outcome": "PASS",
+      "files": 18
+    },
+    {
+      "control": "corrupt_download_rejected_before_write",
+      "outcome": "REJECTED",
+      "expected": "Source SHA-256"
+    }
+  ],
+  "live_HTTPS_transport": "Separate public retrieval record; this transport test is simulated"
+}

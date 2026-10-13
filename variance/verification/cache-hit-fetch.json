@@ -1,0 +1,80 @@
+{
+  "status": "SOURCE_CACHE_VERIFIED",
+  "files": 18,
+  "programs_executed": false,
+  "redistribution_permission": "NOT_GRANTED",
+  "results": [
+    {
+      "path": "sources/global/global-residual-dimension.md",
+      "status": "VERIFIED_EXISTING"
+    },
+    {
+      "path": "sources/effective-host/PROOF.md",
+      "status": "VERIFIED_EXISTING"
+    },
+    {
+      "path": "sources/global/experiment/README.md",
+      "status": "VERIFIED_EXISTING"
+    },
+    {
+      "path": "sources/global/experiment/certificates.json",
+      "status": "VERIFIED_EXISTING"
+    },
+    {
+      "path": "sources/global/experiment/check_global_residual.py",
+      "status": "VERIFIED_EXISTING"
+    },
+    {
+      "path": "sources/global/experiment/expected-output.txt",
+      "status": "VERIFIED_EXISTING"
+    },
+    {
+      "path": "sources/global/experiment/source-pins.json",
+      "status": "VERIFIED_EXISTING"
+    },
+    {
+      "path": "sources/global/experiment/template_data.json",
+      "status": "VERIFIED_EXISTING"
+    },
+    {
+      "path": "sources/global/experiment/verification.json",
+      "status": "VERIFIED_EXISTING"
+    },
+    {
+      "path": "sources/global/experiment/SHA256SUMS.txt",
+      "status": "VERIFIED_EXISTING"
+    },
+    {
+      "path": "sources/review/review-02-proof.tex",
+      "status": "VERIFIED_EXISTING"
+    },
+    {
+      "path": "sources/review/review-03-support-refinement.md",
+      "status": "VERIFIED_EXISTING"
+    },
+    {
+      "path": "sources/review/review-04-sequential-refinement.md",
+      "status": "VERIFIED_EXISTING"
+    },
+    {
+      "path": "sources/review/review-05-overlap-refinement.md",
+      "status": "VERIFIED_EXISTING"
+    },
+    {
+      "path": "sources/review/review-09-overlap-refinement.md",
+      "status": "VERIFIED_EXISTING"
+    },
+    {
+      "path": "sources/review/review-10-l3-template-transfer-proof.md",
+      "status": "VERIFIED_EXISTING"
+    },
+    {
+      "path": "sources/review/review-11-t7-orbit-theorem.md",
+      "status": "VERIFIED_EXISTING"
+    },
+    {
+      "path": "sources/review/review-12-RemainderBounds.lean",
+      "status": "VERIFIED_EXISTING"
+    }
+  ]
+}

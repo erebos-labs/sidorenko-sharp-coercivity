@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "version": "1.0.1",
+  "repository_release": "v1.2.0",
+  "project": "Erebos Labs",
+  "prepared_utc": "2026-10-13T01:14:22.284018+00:00",
+  "archive": {
+    "filename": "sidorenko_variance_v1.0.1.zip",
+    "sha256": "b8befea81b161205fee8ec90413ad368b50532a287862aa77ee0999d3325ddf1",
+    "bytes": 131242,
+    "entries": 56,
+    "root": "sidorenko_variance_v1.0.1"
+  },
+  "reviewed_candidate_sha256": "11f34c61d2c96d888358fcafaadba9f280b8609b43d352c8be65e913bbf24be9",
+  "original_pro_archive_sha256": "79fecb74de0e592cd25f9f89de43646f8753e679dda24f0c928ac370d1f65c14",
+  "finalization": "Only packaging version/status labels and actual live HTTPS retrieval receipt updated; mathematical bodies and nine original arithmetic/data files unchanged",
+  "full_replay_requires_external_source_cache": true,
+  "bundled_original_source_bindings": 5,
+  "external_source_bindings": 18,
+  "all_original_source_bindings_preserved": 23,
+  "source_cache_redistributed": false,
+  "fetched_programs_executed": false,
+  "actual_cold_public_HTTPS_retrieval": "PASS, 18 exact byte/SHA256/Git-blob bindings",
+  "original_contribution_license": "MIT",
+  "bundled_openai_license": "Apache-2.0",
+  "unclear_license_refinement_sources": "References only; local retrieval does not grant redistribution permission",
+  "claims": {
+    "local_sharp_coefficient": "1/48",
+    "denominator": "sum_{i<j} ((p_i+t_i)-(p_j+t_j))^2",
+    "positive_variance_equality": "up to permutation c=delta=v=0, p=t=(a,0,0), a>0, d>=2a",
+    "conditional_M_bound": 256,
+    "conditional_sufficient_even_D": 3072,
+    "retained_residual_constant": 1196,
+    "template": "unchanged original 35-vertex template",
+    "novelty": "unverified",
+    "complete_smaller_counterexample": false,
+    "optimal_dimension": false,
+    "geometric_realization": false,
+    "Lean_formalization": false
+  },
+  "preserved_release": {
+    "tag": "v1.1.0",
+    "commit": "0339f50a039001dc06bd12ffc664ab05a50253fb",
+    "archive_sha256": "058997f1e17a6c4298c9b62fd6b3a775f06769497c52f8e47e63288baf01fb60"
+  },
+  "verification_counts": {
+    "original_local_identities": 35,
+    "original_local_examples": 10,
+    "original_mutation_rejections": 8,
+    "downstream_identities": 19,
+    "new_and_baseline_matrix_entries_each": 1089,
+    "new_and_baseline_coordinate_bounds_each": 33,
+    "independent_local_grid": 1251801,
+    "scalar_boundary_grid": 625,
+    "rational_probes": 24,
+    "independent_activity_tests": 14757,
+    "packaging_controls": 18
+  },
+  "limits": [
+    "Conventional proof supported by finite exact checks; no proof-assistant formalization",
+    "Downstream estimate retains inherited integer-profile/geometric/probability/transverse assumptions",
+    "No full finite-host recalculation, optimality, global priority or complete counterexample claim"
+  ]
+}

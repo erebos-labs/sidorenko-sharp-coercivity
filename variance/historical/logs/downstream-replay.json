@@ -1,0 +1,27 @@
+{
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "records": [
+    {
+      "cwd": "fresh unrelated temporary directory",
+      "elapsed_seconds": 0.055794,
+      "name": "downstream",
+      "returncode": 0,
+      "script": "check_downstream.py",
+      "script_sha256": "55d920cddba1e504459c090353e4039692a485b0cf99f8fffa72de1b2d644b2d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "aa6dc35ff30d189d83df4a2cd94f1a2088942ffd505575ad2ed295187595154d"
+    },
+    {
+      "cwd": "fresh unrelated temporary directory",
+      "elapsed_seconds": 0.146218,
+      "name": "downstream-mutations",
+      "returncode": 0,
+      "script": "test_downstream_mutations.py",
+      "script_sha256": "2c869d4e90c4e6ddffd0cb2c7b2de458ffef02f6dde5de9c3d9e1fcd6f990f20",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "37f2b4da3dbd7a8fde59d7d96b221131e8e78cb22dd90ecf7f8d23903a14a0c5"
+    }
+  ],
+  "status": "PASS"
+}

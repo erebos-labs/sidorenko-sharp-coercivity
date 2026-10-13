@@ -1,0 +1,30 @@
+[
+  {
+    "check": "local",
+    "exit_code": 0,
+    "cwd": "unrelated working directory",
+    "stdout": "local.stdout.json",
+    "stderr": "local.stderr.txt"
+  },
+  {
+    "check": "local_mutations",
+    "exit_code": 0,
+    "cwd": "unrelated working directory",
+    "stdout": "local_mutations.stdout.json",
+    "stderr": "local_mutations.stderr.txt"
+  },
+  {
+    "check": "downstream",
+    "exit_code": 0,
+    "cwd": "unrelated working directory",
+    "stdout": "downstream.stdout.json",
+    "stderr": "downstream.stderr.txt"
+  },
+  {
+    "check": "downstream_mutations",
+    "exit_code": 0,
+    "cwd": "unrelated working directory",
+    "stdout": "downstream_mutations.stdout.json",
+    "stderr": "downstream_mutations.stderr.txt"
+  }
+]

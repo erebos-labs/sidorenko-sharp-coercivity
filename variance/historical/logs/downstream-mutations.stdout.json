@@ -1,0 +1,21 @@
+{
+  "mutation_tests": [
+    {
+      "expected_failure": "inverse matrix product",
+      "mutated_certificate_sha256": "99b7bd3215d7f765a9f3815c5844ae088c0e859ea6c39fc54d4e8a2705e02dec",
+      "mutation": "one_inverse_diagonal_plus_one",
+      "rejected_at_expected_check": true,
+      "returncode": 1,
+      "stderr": "FAIL: inverse matrix product"
+    },
+    {
+      "expected_failure": "strict coordinate inequalities",
+      "mutated_certificate_sha256": "0a7313b16daae9e3cbcc75fc86a62ae9e404b13cffa0259f39111e37b3a41608",
+      "mutation": "strict_bound_replaced_by_one",
+      "rejected_at_expected_check": true,
+      "returncode": 1,
+      "stderr": "FAIL: strict coordinate inequalities"
+    }
+  ],
+  "status": "PASS"
+}

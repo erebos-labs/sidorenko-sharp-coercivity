@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "package_version": "1.0.1",
+  "original_mathematical_version": "1.0.0",
+  "retained_source_paths": [
+    "sources/openai/tail.tex",
+    "sources/openai/planted.tex",
+    "sources/prior/THEOREM.md",
+    "sources/openai/complex.tex",
+    "sources/openai/LICENSE"
+  ],
+  "external_sources": [
+    {
+      "path": "sources/global/global-residual-dimension.md",
+      "repository": "artuskg/sidorenko-template-refinements",
+      "commit": "9922b05bf2c3418e1a46378d4ebac60e8a34ce51",
+      "upstream_path": "global-residual-dimension.md",
+      "git_blob": "dcc39f4f593460cbad663ab168e1e68bf9c0146d",
+      "bytes": 29128,
+      "sha256": "4dab94055d9ede6751dd53728e17ecef27f4d461360fefcd30565e24310c4172",
+      "url": "https://github.com/artuskg/sidorenko-template-refinements/blob/9922b05bf2c3418e1a46378d4ebac60e8a34ce51/global-residual-dimension.md"
+    },
+    {
+      "path": "sources/effective-host/PROOF.md",
+      "repository": "artuskg/sidorenko-template-refinements",
+      "commit": "06acd4cf46bfe9086f9abc7d85b5c9f171480143",
+      "upstream_path": "experiments/original-effective-host/recovered/PROOF.md",
+      "git_blob": "e5f1aaef9c3020054f0221a5b5dedc8260d5d5e4",
+      "bytes": 80925,
+      "sha256": "20c917f8fbab9cc51a92d0a4c853ca2080541a9a15c116bd3343150993aaf031",
+      "url": "https://github.com/artuskg/sidorenko-template-refinements/blob/06acd4cf46bfe9086f9abc7d85b5c9f171480143/experiments/original-effective-host/recovered/PROOF.md"
+    },
+    {
+      "path": "sources/global/experiment/README.md",
+      "repository": "artuskg/sidorenko-template-refinements",
+      "commit": "9922b05bf2c3418e1a46378d4ebac60e8a34ce51",
+      "upstream_path": "experiments/global-residual-energy/README.md",
+      "git_blob": "4ea32521b421865c5c30f3e93131314a9d1225ce",
+      "bytes": 4007,
+      "sha256": "9bd2c8eb5e2b9b513697b063e9b295a300278574f973cb07167982bf09be5298",
+      "url": "https://github.com/artuskg/sidorenko-template-refinements/blob/9922b05bf2c3418e1a46378d4ebac60e8a34ce51/experiments/global-residual-energy/README.md"
+    },
+    {
+      "path": "sources/global/experiment/certificates.json",
+      "repository": "artuskg/sidorenko-template-refinements",
+      "commit": "9922b05bf2c3418e1a46378d4ebac60e8a34ce51",
+      "upstream_path": "experiments/global-residual-energy/certificates.json",
+      "git_blob": "48c6f3f3468ce34b7444f6bf1727902487bea4a5",
+      "bytes": 75708,
+      "sha256": "dd51b323ebba3fd69ea3795ad3a2e4f06c3f84109faaf2b535c1b9a5b9bd1b02",
+      "url": "https://github.com/artuskg/sidorenko-template-refinements/blob/9922b05bf2c3418e1a46378d4ebac60e8a34ce51/experiments/global-residual-energy/certificates.json"
+    },
+    {
+      "path": "sources/global/experiment/check_global_residual.py",
+      "repository": "artuskg/sidorenko-template-refinements",
+      "commit": "9922b05bf2c3418e1a46378d4ebac60e8a34ce51",
+      "upstream_path": "experiments/global-residual-energy/check_global_residual.py",
+      "git_blob": "1cdf46c2332fcc8a598a0ae3764ca5a60ffe354c",
+      "bytes": 13032,
+      "sha256": "89d506983eaf7ad0d81fcf92d7c00df3a49b408e72545dd976a1d406de57ec31",
+      "url": "https://github.com/artuskg/sidorenko-template-refinements/blob/9922b05bf2c3418e1a46378d4ebac60e8a34ce51/experiments/global-residual-energy/check_global_residual.py"
+    },
+    {
+      "path": "sources/global/experiment/expected-output.txt",
+      "repository": "artuskg/sidorenko-template-refinements",
+      "commit": "9922b05bf2c3418e1a46378d4ebac60e8a34ce51",
+      "upstream_path": "experiments/global-residual-energy/expected-output.txt",
+      "git_blob": "5058ab346e5a27de1d24612e4397ecc6a1e741a5",
+      "bytes": 1164,
+      "sha256": "94d1be493dbc87d3cfe656adebbdffba6fb0fb6714fc79c6d02ce8227a121a33",
+      "url": "https://github.com/artuskg/sidorenko-template-refinements/blob/9922b05bf2c3418e1a46378d4ebac60e8a34ce51/experiments/global-residual-energy/expected-output.txt"
+    },
+    {
+      "path": "sources/global/experiment/source-pins.json",
+      "repository": "artuskg/sidorenko-template-refinements",
+      "commit": "9922b05bf2c3418e1a46378d4ebac60e8a34ce51",
+      "upstream_path": "experiments/global-residual-energy/source-pins.json",
+      "git_blob": "aa6774570e1e500bd420e934f56a5534c6e51718",
+      "bytes": 1646,
+      "sha256": "bdd649617d380b9ed50846f1a295ca37107fa775b26e582e9d37c8bd10e0e9a0",
+      "url": "https://github.com/artuskg/sidorenko-template-refinements/blob/9922b05bf2c3418e1a46378d4ebac60e8a34ce51/experiments/global-residual-energy/source-pins.json"
+    },
+    {
+      "path": "sources/global/experiment/template_data.json",
+      "repository": "artuskg/sidorenko-template-refinements",
+      "commit": "9922b05bf2c3418e1a46378d4ebac60e8a34ce51",
+      "upstream_path": "experiments/global-residual-energy/template_data.json",
+      "git_blob": "fac1ede3c38a67962a46c415f9cfc16612c855f5",
+      "bytes": 7532,
+      "sha256": "e203ce4af0f902fc774272a5e374a323527b9c566e4b49e1af562bdb81ba5b2a",
+      "url": "https://github.com/artuskg/sidorenko-template-refinements/blob/9922b05bf2c3418e1a46378d4ebac60e8a34ce51/experiments/global-residual-energy/template_data.json"
+    },
+    {
+      "path": "sources/global/experiment/verification.json",
+      "repository": "artuskg/sidorenko-template-refinements",
+      "commit": "9922b05bf2c3418e1a46378d4ebac60e8a34ce51",
+      "upstream_path": "experiments/global-residual-energy/verification.json",
+      "git_blob": "688c7035d3bd53a857dcc7f9e23ff82ea39509c6",
+      "bytes": 4591,
+      "sha256": "496132cb4f602ecd53aa21cff9cd51f74e5577d285f8f466384779c6b671d27a",
+      "url": "https://github.com/artuskg/sidorenko-template-refinements/blob/9922b05bf2c3418e1a46378d4ebac60e8a34ce51/experiments/global-residual-energy/verification.json"
+    },
+    {
+      "path": "sources/global/experiment/SHA256SUMS.txt",
+      "repository": "artuskg/sidorenko-template-refinements",
+      "commit": "9922b05bf2c3418e1a46378d4ebac60e8a34ce51",
+      "upstream_path": "experiments/global-residual-energy/SHA256SUMS.txt",
+      "git_blob": "759484ddc0cf74f54c5437062ce5d7a6c410e6bf",
+      "bytes": 1037,
+      "sha256": "dfe771b8d63ce505444a24a7a241a6ce996238cfbdab7d4de7d40789c85481a9",
+      "url": "https://github.com/artuskg/sidorenko-template-refinements/blob/9922b05bf2c3418e1a46378d4ebac60e8a34ce51/experiments/global-residual-energy/SHA256SUMS.txt"
+    },
+    {
+      "path": "sources/review/review-02-proof.tex",
+      "repository": "rohanarun/sidorenko-template-refinements",
+      "commit": "d1df2a5cc0cb0c9003466b1c7f8ecb77a8e72a7d",
+      "upstream_path": "proof.tex",
+      "git_blob": "66fc5eb655e6471df0c266c986c0ab47d943fe0f",
+      "bytes": 18382,
+      "sha256": "925da34d72debee26551c1b0110ada0c8e70afa6bfd7877c2258aad0fe2a8a5b",
+      "url": "https://github.com/rohanarun/sidorenko-template-refinements/blob/d1df2a5cc0cb0c9003466b1c7f8ecb77a8e72a7d/proof.tex",
+      "role": "supplementary bounded review"
+    },
+    {
+      "path": "sources/review/review-03-support-refinement.md",
+      "repository": "rohanarun/sidorenko-template-refinements",
+      "commit": "e68124868f55bba9ed791ff4379c7a42ab48955b",
+      "upstream_path": "support-refinement.md",
+      "git_blob": "e8ac7d888d7db0d16cf87d589fc886dae3507a8d",
+      "bytes": 2758,
+      "sha256": "aac209ab465af19c4acf8a659c7a922103af126f0505d577f365ec976ab6e33f",
+      "url": "https://github.com/rohanarun/sidorenko-template-refinements/blob/e68124868f55bba9ed791ff4379c7a42ab48955b/support-refinement.md",
+      "role": "supplementary bounded review"
+    },
+    {
+      "path": "sources/review/review-04-sequential-refinement.md",
+      "repository": "rohanarun/sidorenko-template-refinements",
+      "commit": "b513fb4576b30443d0f41df556d378b676723e06",
+      "upstream_path": "sequential-refinement.md",
+      "git_blob": "1e667d9fc5a1ec4134d626101732036335252447",
+      "bytes": 3321,
+      "sha256": "4fda960d3b355ce969e8279238746618e09e238fb9f4ec7160d35065bf165b92",
+      "url": "https://github.com/rohanarun/sidorenko-template-refinements/blob/b513fb4576b30443d0f41df556d378b676723e06/sequential-refinement.md",
+      "role": "supplementary bounded review"
+    },
+    {
+      "path": "sources/review/review-05-overlap-refinement.md",
+      "repository": "rohanarun/sidorenko-template-refinements",
+      "commit": "9aecdfbd987ecda60b7c5e0b382849d67c6bbc2f",
+      "upstream_path": "overlap-refinement.md",
+      "git_blob": "46b742c0a9ce27d00346466ad75b46848f4f6d31",
+      "bytes": 3638,
+      "sha256": "f006035af24e2b081350edce6f8634e2cd515bed28efb758ca152b427dd159c9",
+      "url": "https://github.com/rohanarun/sidorenko-template-refinements/blob/9aecdfbd987ecda60b7c5e0b382849d67c6bbc2f/overlap-refinement.md",
+      "role": "supplementary bounded review"
+    },
+    {
+      "path": "sources/review/review-09-overlap-refinement.md",
+      "repository": "artuskg/sidorenko-template-refinements",
+      "commit": "c3088e0bf0d5e694d84e00ff6c9b9e852e32ae97",
+      "upstream_path": "overlap-refinement.md",
+      "git_blob": "a9b3fb4d6da36db8ca14034232f0c4755785b6b4",
+      "bytes": 7052,
+      "sha256": "7bd5d1369612b8ea44fc0b2c791e4065a09bb3921b819eeabdc94a54a6a62c58",
+      "url": "https://github.com/artuskg/sidorenko-template-refinements/blob/c3088e0bf0d5e694d84e00ff6c9b9e852e32ae97/overlap-refinement.md",
+      "role": "supplementary bounded review"
+    },
+    {
+      "path": "sources/review/review-10-l3-template-transfer-proof.md",
+      "repository": "artuskg/sidorenko-template-refinements",
+      "commit": "cfc4ecfaffbdfb3f2bb08edcef1a6fe7cbfa40e3",
+      "upstream_path": "experiments/t7-orbit/dependencies/l3-template-transfer-proof.md",
+      "git_blob": "7c4c0283ff729d91703318829eff64f1cf7fa23a",
+      "bytes": 63949,
+      "sha256": "2d286841535e86965dd1af937a85c65ae11ed73281184636ccc5375b3526cba4",
+      "url": "https://github.com/artuskg/sidorenko-template-refinements/blob/cfc4ecfaffbdfb3f2bb08edcef1a6fe7cbfa40e3/experiments/t7-orbit/dependencies/l3-template-transfer-proof.md",
+      "role": "supplementary bounded review"
+    },
+    {
+      "path": "sources/review/review-11-t7-orbit-theorem.md",
+      "repository": "artuskg/sidorenko-template-refinements",
+      "commit": "cfc4ecfaffbdfb3f2bb08edcef1a6fe7cbfa40e3",
+      "upstream_path": "t7-orbit-theorem.md",
+      "git_blob": "34d18c12f6b83c9f3cf05a9b6f30276806e2735e",
+      "bytes": 21920,
+      "sha256": "a4996ac29fdc54e31f7ebb25bffe233fe4f4caa164d557ad9e7dd7fbd89fb960",
+      "url": "https://github.com/artuskg/sidorenko-template-refinements/blob/cfc4ecfaffbdfb3f2bb08edcef1a6fe7cbfa40e3/t7-orbit-theorem.md",
+      "role": "supplementary bounded review"
+    },
+    {
+      "path": "sources/review/review-12-RemainderBounds.lean",
+      "repository": "artuskg/sidorenko-template-refinements",
+      "commit": "cfc4ecfaffbdfb3f2bb08edcef1a6fe7cbfa40e3",
+      "upstream_path": "research/t7-finite-coefficient-lean/formal/T7Weighted/RemainderBounds.lean",
+      "git_blob": "6ef77b9b6ff10eacb4567e82419a81d86f87f6d1",
+      "bytes": 2010,
+      "sha256": "3ea3bedf63ae6d4d1376d75cd83de6d552b3ff78a7f8a14654592826974a3c5f",
+      "url": "https://github.com/artuskg/sidorenko-template-refinements/blob/cfc4ecfaffbdfb3f2bb08edcef1a6fe7cbfa40e3/research/t7-finite-coefficient-lean/formal/T7Weighted/RemainderBounds.lean",
+      "role": "supplementary bounded review"
+    }
+  ],
+  "external_reason": "No covering redistribution license or permission verified. References only; retrieve as data into a separate local cache. Do not redistribute that cache.",
+  "omitted_unpinned_metadata": [
+    {
+      "path": "sources/review/current-review.json",
+      "reason": "Historical GitHub API/tree/PR snapshots; unnecessary for arithmetic replay; not redistributed.",
+      "bytes": 113827,
+      "sha256": "480de9db460fe9a56fb5e095a4a6bec285a19332ad3dbde06e5634f36465c08c"
+    }
+  ],
+  "execution_policy": "Fetched sources are data only; no fetched program is executed. All original 23 source checks remain mandatory for full replay."
+}

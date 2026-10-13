@@ -36,4 +36,4 @@ jobs:
         run: gh release download "$RELEASE_TAG" --dir release-assets
       - name: Verify freshly downloaded release assets
         if: github.event_name == 'release'
-        run: python -I -B tools/verify_repository.py --release-dir release-assets
+        run: python -I -B tools/verify_repository.py --assets-only --release-dir release-assets

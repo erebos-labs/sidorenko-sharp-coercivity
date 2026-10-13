@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "packaging_version": "1.0.1",
+  "mathematical_version": "1.0.0",
+  "original_archive_sha256": "79fecb74de0e592cd25f9f89de43646f8753e679dda24f0c928ac370d1f65c14",
+  "prior_MIT_license": {
+    "repository": "erebos-labs/sidorenko-sharp-coercivity",
+    "commit": "0339f50a039001dc06bd12ffc664ab05a50253fb",
+    "upstream_path": "package/LICENSE",
+    "url": "https://github.com/erebos-labs/sidorenko-sharp-coercivity/blob/0339f50a039001dc06bd12ffc664ab05a50253fb/package/LICENSE",
+    "sha256": "04690d463ba7d13b6b853229a5b1eefefd0b346e063a55967ba2f75f06038a6c",
+    "git_blob": "fd53c72f02b17b6c660b9a95144175fc4178f8b3",
+    "bytes": 1068,
+    "copies": [
+      "LICENSE",
+      "sources/prior/LICENSE"
+    ]
+  },
+  "omission_policy": "No license-unverified snapshots or API bodies redistributed. All 23 exact original source checks preserved for full replay. External cache remains outside release.",
+  "reviewed_candidate_archive_sha256": "11f34c61d2c96d888358fcafaadba9f280b8609b43d352c8be65e913bbf24be9",
+  "publication_finalization": "Only packaging version/status labels finalized; mathematical bodies and original arithmetic/certificates unchanged."
+}

@@ -1,0 +1,296 @@
+{
+  "status": "FULL_REPLAY_PASS",
+  "sha256_files": 49,
+  "retained_source_checks": 5,
+  "external_source_checks": 18,
+  "retrieved_programs_executed": false,
+  "checks": [
+    {
+      "program": "check_variance.py",
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "arithmetic": "fractions.Fraction; exact sparse polynomial coefficients",
+        "kappa": "1/48",
+        "source_files": 23,
+        "polynomial_identities": 35,
+        "rational_examples": 10,
+        "negative_local_slack_examples": 5,
+        "scope": "Arithmetic certificate; the complete real-domain proof and equality reasoning are in THEOREM.md"
+      }
+    },
+    {
+      "program": "test_local_mutations.py",
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "baseline": "PASS",
+        "mutations": [
+          {
+            "mutation": "claim_1_over_47",
+            "result": "REJECTED",
+            "exit_code": 1,
+            "intended_check": "auxiliary-to-variance gap"
+          },
+          {
+            "mutation": "alter_zero_delta_certificate",
+            "result": "REJECTED",
+            "exit_code": 1,
+            "intended_check": "zero-delta nonnegative certificate"
+          },
+          {
+            "mutation": "alter_positive_delta_scalar",
+            "result": "REJECTED",
+            "exit_code": 1,
+            "intended_check": "positive-delta scalar H"
+          },
+          {
+            "mutation": "reverse_full_slack_delta_loss",
+            "result": "REJECTED",
+            "exit_code": 1,
+            "intended_check": "full slack is Q"
+          },
+          {
+            "mutation": "alter_pinned_tail_bytes",
+            "result": "REJECTED",
+            "exit_code": 1,
+            "intended_check": "Source byte length: sources/openai/tail.tex"
+          },
+          {
+            "mutation": "violate_per_index_v_bound",
+            "result": "REJECTED",
+            "exit_code": 1,
+            "intended_check": "Example violates exact source domain"
+          }
+        ],
+        "rejected": 6,
+        "limitations": "Mutations test selected verifier failures; the conventional proof remains necessary."
+      }
+    },
+    {
+      "program": "check_downstream.py",
+      "exit_code": 0,
+      "result": {
+        "Hnum": 3716263103433120,
+        "M_bound": 256,
+        "baseline_inverse_product_entries": 1089,
+        "baseline_strict_coordinate_bounds": 33,
+        "fresh_point_exposures": 6,
+        "integer_mode_removal_applied_to_real_domain": false,
+        "inverse_denominator": 270558215904,
+        "inverse_product_entries": 1089,
+        "kappa": "1/48",
+        "literal_cuts": 3,
+        "local_activity_masks": 8,
+        "local_slack_nonnegativity_assumed": false,
+        "minimum_linear_margin": 1074405722846400,
+        "minimum_squared_margin": 1113724657401764962287513600,
+        "nondirect_exponent_saving": 1876,
+        "original_faces": 22,
+        "original_point_pairs": 33,
+        "original_point_vertices": 13,
+        "polynomial_identities": 19,
+        "retained_nondirect_remainder": 1196,
+        "status": "PASS",
+        "strict_bound_B": 257,
+        "strict_coordinate_bounds": 33,
+        "sufficient_even_D": 3072,
+        "symbolic_identity_labels": [
+          "full source slack Q minus linear loss",
+          "three-active loss envelope",
+          "pair variance bounded by twice maximum squared",
+          "all lower-activity energy transfer",
+          "lower-activity baseline identity",
+          "even pair dimension floor gain",
+          "odd pair dimension floor gain",
+          "even floor gain quadratic envelope",
+          "odd floor gain quadratic envelope",
+          "exact integer mode-removal identity",
+          "common mode bracket comparison",
+          "v mode bracket comparison",
+          "positive common dimension square completion",
+          "common dimension one equality expression",
+          "common dimension zero integer expression",
+          "negative fully coincident slack control",
+          "fractional tuple local negative slack",
+          "integer-mode removal cannot be applied to real tuples",
+          "retained robust nondirect completion"
+        ]
+      }
+    },
+    {
+      "program": "test_downstream_mutations.py",
+      "exit_code": 0,
+      "result": {
+        "mutation_tests": [
+          {
+            "expected_failure": "inverse matrix product",
+            "mutated_certificate_sha256": "99b7bd3215d7f765a9f3815c5844ae088c0e859ea6c39fc54d4e8a2705e02dec",
+            "mutation": "one_inverse_diagonal_plus_one",
+            "rejected_at_expected_check": true,
+            "returncode": 1,
+            "stderr": "FAIL: inverse matrix product"
+          },
+          {
+            "expected_failure": "strict coordinate inequalities",
+            "mutated_certificate_sha256": "0a7313b16daae9e3cbcc75fc86a62ae9e404b13cffa0259f39111e37b3a41608",
+            "mutation": "strict_bound_replaced_by_one",
+            "rejected_at_expected_check": true,
+            "returncode": 1,
+            "stderr": "FAIL: strict coordinate inequalities"
+          }
+        ],
+        "status": "PASS"
+      }
+    },
+    {
+      "program": "independent/check_local_grid.py",
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "stdout": "UTC 2026-10-13T00:50:49.193906+00:00\nGRID PASS {'feasible': 1251801, 'by_delta_sign': {-1: 22851, 0: 78309, 1: 1150641}, 'aux_equalities': 387, 'variance_equalities': 41, 'positive_variance_equalities': 36}\nSCALAR BOUNDARY PASS {'tuples': 625, 'equalities': 1, 'regions': {'m=u': 304, 'm=delta': 49, 'm=v,u>=2v/3': 108, 'm=v,u<=2v/3,u<=2delta/3': 95, 'm=v,u<=2v/3,u>=2delta/3': 127}}\nRATIONAL EQUALITY/BOUNDARY PASS: 9 positive-variance extremizers, 3 positive-delta auxiliary extremizers, 9 negative-delta auxiliary extremizers, 3 zero-profile boundaries\n"
+      }
+    },
+    {
+      "program": "independent/check_downstream.py",
+      "exit_code": 0,
+      "result": {
+        "started_utc": "2026-10-13T00:50:52.228867+00:00",
+        "method": "Parse source complex.tex; exact rational inversion; independently evaluate source gain and beta, no submitted code imports.",
+        "matrix": {
+          "all_inverse_entries_matched": 1089,
+          "coordinate_inequalities_passed": 33,
+          "tau": 270558215904,
+          "Hnum": 3716263103433120,
+          "minimum_unscaled_linear_margin": 44766905118600,
+          "minimum_unscaled_squared_margin": 1933549752433619726193600,
+          "threshold_256_rejected_edges": [
+            [
+              1,
+              3
+            ],
+            [
+              3,
+              10
+            ]
+          ],
+          "maximum_real_coordinate_bound_approx": 256.92016150369375,
+          "maximum_bound_edge": [
+            1,
+            3
+          ],
+          "M": 256,
+          "D": 3072,
+          "positive_pivots": 33
+        },
+        "baseline": {
+          "all_inverse_entries_matched": 1089,
+          "coordinate_inequalities_passed": 33,
+          "strict_threshold": 609,
+          "threshold_608_rejected": true,
+          "M": 608,
+          "D": 7296
+        },
+        "activity_tests": {
+          "lower_domains": "h_i=0..6; 0<=c<=min h_i; minimal even feasible D and D=12 max h",
+          "full_domain": "M=max h=0..4; D=12M; all integer source necessary gain tuples",
+          "tests_by_mask": {
+            "0": 1567,
+            "1": 1567,
+            "2": 1567,
+            "3": 1567,
+            "4": 1567,
+            "5": 1567,
+            "6": 1567,
+            "7": 3788
+          },
+          "zero_slacks_by_mask": {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 3,
+            "4": 1,
+            "5": 3,
+            "6": 3,
+            "7": 9
+          },
+          "all_equality_classifications_matched": true
+        },
+        "residual": {
+          "zero_excess_degrees": [
+            3,
+            6,
+            3,
+            6,
+            4,
+            2,
+            4,
+            4,
+            4,
+            6,
+            4,
+            6,
+            4
+          ],
+          "sum_binomial_caps": 468,
+          "maximum_count_exponent": 1196,
+          "nondirect_exponent_saving_at_D3072": 1876,
+          "support_span_prefactor_less_than_2_pow_63": true
+        },
+        "finished_utc": "2026-10-13T00:50:52.477405+00:00",
+        "status": "PASS"
+      }
+    },
+    {
+      "program": "generate_original_certificate.py",
+      "exit_code": 0,
+      "result": {
+        "Hnum": 3716263103433120,
+        "M_bound": 256,
+        "baseline_inverse_product_entries": 1089,
+        "baseline_strict_coordinate_bounds": 33,
+        "fresh_point_exposures": 6,
+        "integer_mode_removal_applied_to_real_domain": false,
+        "inverse_denominator": 270558215904,
+        "inverse_product_entries": 1089,
+        "kappa": "1/48",
+        "literal_cuts": 3,
+        "local_activity_masks": 8,
+        "local_slack_nonnegativity_assumed": false,
+        "minimum_linear_margin": 1074405722846400,
+        "minimum_squared_margin": 1113724657401764962287513600,
+        "nondirect_exponent_saving": 1876,
+        "original_faces": 22,
+        "original_point_pairs": 33,
+        "original_point_vertices": 13,
+        "polynomial_identities": 19,
+        "retained_nondirect_remainder": 1196,
+        "status": "PASS",
+        "strict_bound_B": 257,
+        "strict_coordinate_bounds": 33,
+        "sufficient_even_D": 3072,
+        "symbolic_identity_labels": [
+          "full source slack Q minus linear loss",
+          "three-active loss envelope",
+          "pair variance bounded by twice maximum squared",
+          "all lower-activity energy transfer",
+          "lower-activity baseline identity",
+          "even pair dimension floor gain",
+          "odd pair dimension floor gain",
+          "even floor gain quadratic envelope",
+          "odd floor gain quadratic envelope",
+          "exact integer mode-removal identity",
+          "common mode bracket comparison",
+          "v mode bracket comparison",
+          "positive common dimension square completion",
+          "common dimension one equality expression",
+          "common dimension zero integer expression",
+          "negative fully coincident slack control",
+          "fractional tuple local negative slack",
+          "integer-mode removal cannot be applied to real tuples",
+          "retained robust nondirect completion"
+        ]
+      }
+    }
+  ]
+}

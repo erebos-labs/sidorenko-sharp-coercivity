@@ -12,3 +12,14 @@ Read [package/THIRD_PARTY_NOTICES.md](package/THIRD_PARTY_NOTICES.md),
 [package/sources/openai/LICENSE](package/sources/openai/LICENSE), and
 [package/ATTRIBUTION.md](package/ATTRIBUTION.md) for complete scope and credit.
 The related theorem and API snapshots are not redistributed.
+
+The variance package in variance/ adds a second original proof/certificate
+and clearly scoped MIT contributions. Its three exact OpenAI sections and
+license retain Apache-2.0. Its prior Erebos theorem and checker adaptation
+retain the restored MIT notice in variance/sources/prior/LICENSE.
+See variance/THIRD_PARTY_NOTICES.md and variance/ATTRIBUTION.md.
+
+The 18 unclear-license refinement sources are citation-only in the public
+tree and release ZIP. Their exact repository/commit/path/hash metadata is
+retained. Optional local retrieval does not grant redistribution permission;
+neither the external source cache nor raw API/PR snapshots are released.

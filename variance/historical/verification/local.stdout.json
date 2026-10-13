@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "arithmetic": "fractions.Fraction; exact sparse polynomial coefficients",
+  "kappa": "1/48",
+  "source_files": 23,
+  "polynomial_identities": 35,
+  "rational_examples": 10,
+  "negative_local_slack_examples": 5,
+  "scope": "Arithmetic certificate; the complete real-domain proof and equality reasoning are in THEOREM.md"
+}

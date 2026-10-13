@@ -1,0 +1,9 @@
+{
+  "transport": "Actual standard-library public HTTPS; cold cache; no authentication headers; sources are data only",
+  "output_created_utc": "2026-10-13T01:08:16.405408+00:00",
+  "output_completed_utc": "2026-10-13T01:08:22.832292+00:00",
+  "exit_code": 0,
+  "files_retrieved_and_byte_hash_blob_checked": 18,
+  "retrieved_programs_executed": false,
+  "stdout_sha256": "640f888d659e0dad0d8cc541806bce7da65399bad52259fe7c43628a118a9451"
+}

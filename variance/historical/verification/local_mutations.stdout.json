@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "baseline": "PASS",
+  "mutations": [
+    {
+      "mutation": "claim_1_over_47",
+      "result": "REJECTED",
+      "exit_code": 1,
+      "intended_check": "auxiliary-to-variance gap"
+    },
+    {
+      "mutation": "alter_zero_delta_certificate",
+      "result": "REJECTED",
+      "exit_code": 1,
+      "intended_check": "zero-delta nonnegative certificate"
+    },
+    {
+      "mutation": "alter_positive_delta_scalar",
+      "result": "REJECTED",
+      "exit_code": 1,
+      "intended_check": "positive-delta scalar H"
+    },
+    {
+      "mutation": "reverse_full_slack_delta_loss",
+      "result": "REJECTED",
+      "exit_code": 1,
+      "intended_check": "full slack is Q"
+    },
+    {
+      "mutation": "alter_pinned_tail_bytes",
+      "result": "REJECTED",
+      "exit_code": 1,
+      "intended_check": "Source byte length: sources/openai/tail.tex"
+    },
+    {
+      "mutation": "violate_per_index_v_bound",
+      "result": "REJECTED",
+      "exit_code": 1,
+      "intended_check": "Example violates exact source domain"
+    }
+  ],
+  "rejected": 6,
+  "limitations": "Mutations test selected verifier failures; the conventional proof remains necessary."
+}

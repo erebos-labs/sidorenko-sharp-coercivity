@@ -1,0 +1,44 @@
+{
+  "version": "1.0.1",
+  "status": "proved_sharp_theorem_and_verified_conditional_certificate",
+  "proof_passes": {
+    "derivation": 1,
+    "adversarial_audit": 1
+  },
+  "local": {
+    "domain": "exact eq:tail-feasible over reals",
+    "quadratic": "eq:tail-quadratic",
+    "denominator": "sum_{i<j} ((p_i+t_i)-(p_j+t_j))^2",
+    "largest_kappa": "1/48",
+    "positive_denominator_equality": "up to permutation: c=delta=v=0; p=t=(a,0,0); a>0; d>=2a",
+    "zero_denominator_equality": "p=t=0; delta=v=0; c,d>=0; c*d=0",
+    "full_slack_preserved": true
+  },
+  "downstream": {
+    "template": "original 35-vertex incidence template only",
+    "M_bound": 256,
+    "sufficient_even_D": 3072,
+    "previous_M_bound": 608,
+    "previous_even_D": 7296,
+    "retained_nondirect_remainder": 1196,
+    "profile_integrality_required_for_mode_removal": true
+  },
+  "novelty": "unverified; bounded review found no duplicate",
+  "unresolved_steps": [],
+  "excluded": [
+    "geometric realization of local extremizers",
+    "optimality of M or D",
+    "template search",
+    "finite-host reconstruction",
+    "publication or PR"
+  ],
+  "mathematical_version": "1.0.0",
+  "release_status": "reviewed_publication_payload",
+  "packaging": {
+    "retained_source_files": 5,
+    "external_reference_files": 18,
+    "full_replay_requires_verified_external_cache": true,
+    "self_contained_offline_full_replay": false,
+    "inventory_only_is_not_mathematical_replay": true
+  }
+}
