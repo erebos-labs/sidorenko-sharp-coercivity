@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "release_pin": "8b350971095fda13884ea568d1914c1edd7fc966",
+  "bundled_sources": [
+    {
+      "local_path": "sources/published/THEOREM.md",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "8b350971095fda13884ea568d1914c1edd7fc966",
+      "repository_path": "full-slack/THEOREM.md",
+      "git_blob_sha1": "60a838160b402118aed8f109c659b30760ff50c8",
+      "sha256": "b338965b94b074e0c57eb59ee7991a7e6bb928c6e698ab0ea3086e821cfde7a8",
+      "bytes": 12879,
+      "materialization": "Prior conversation attachment; exact Git blob matched the pinned connector response or published source manifest."
+    },
+    {
+      "local_path": "sources/published/DOWNSTREAM.md",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "8b350971095fda13884ea568d1914c1edd7fc966",
+      "repository_path": "full-slack/DOWNSTREAM.md",
+      "git_blob_sha1": "b05884d7ce3e876e4b8fc6288ff2d3e0154ff0cb",
+      "sha256": "6df4a7408311940df30b683954c99e158703f86ea86597079f980c95163d5a95",
+      "bytes": 11263,
+      "materialization": "Prior conversation attachment; exact Git blob matched the pinned connector response or published source manifest."
+    },
+    {
+      "local_path": "sources/published/SOURCES.json",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "8b350971095fda13884ea568d1914c1edd7fc966",
+      "repository_path": "full-slack/SOURCES.json",
+      "git_blob_sha1": "811949abdfea4314bfc34e38ab5736d098a824d0",
+      "sha256": "0b2cadf3ff21dabcfdc3f20ac7317b4fb3703471d46a4165eb16cc704ada5645",
+      "bytes": 3915,
+      "materialization": "Prior conversation attachment; exact Git blob matched the pinned connector response or published source manifest."
+    },
+    {
+      "local_path": "sources/published/LICENSE",
+      "repository": "erebos-labs/sidorenko-sharp-coercivity",
+      "commit": "8b350971095fda13884ea568d1914c1edd7fc966",
+      "repository_path": "LICENSE",
+      "git_blob_sha1": "fd53c72f02b17b6c660b9a95144175fc4178f8b3",
+      "sha256": "04690d463ba7d13b6b853229a5b1eefefd0b346e063a55967ba2f75f06038a6c",
+      "bytes": 1068,
+      "materialization": "Prior conversation attachment; exact Git blob matched the pinned connector response or published source manifest."
+    },
+    {
+      "local_path": "sources/openai/complex.tex",
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "repository_path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/complex.tex",
+      "git_blob_sha1": "178b0e9da21867a727ea847dae8e537b9d719a70",
+      "sha256": "b7023c77ec390b3392617c51b1ca3d3ee70d707af6c71e82b0b56547513bbe8a",
+      "bytes": 7236,
+      "materialization": "Prior conversation attachment; exact Git blob matched the pinned connector response or published source manifest."
+    },
+    {
+      "local_path": "sources/openai/LICENSE",
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "repository_path": "LICENSE",
+      "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "materialization": "Prior conversation attachment; exact Git blob matched the pinned connector response or published source manifest."
+    }
+  ],
+  "external_retained_input": {
+    "repository": "artuskg/sidorenko-template-refinements",
+    "commit": "06acd4cf46bfe9086f9abc7d85b5c9f171480143",
+    "repository_path": "experiments/original-effective-host/recovered/PROOF.md",
+    "git_blob_sha1": "e5f1aaef9c3020054f0221a5b5dedc8260d5d5e4",
+    "sha256": "20c917f8fbab9cc51a92d0a4c853ca2080541a9a15c116bd3343150993aaf031",
+    "bundled": false,
+    "access": "Read through GitHub connector at the immutable pin; relevant sections 2.1-2.2, 6.4, 7.1-7.5 and retained gain prefactor. No local whole-file byte comparison claimed.",
+    "redistribution": "External reference only; upstream redistribution license not established."
+  }
+}

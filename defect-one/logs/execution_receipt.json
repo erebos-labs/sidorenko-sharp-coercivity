@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "executed_date": "2026-10-13",
+  "python": "3.13.5",
+  "platform": "Linux",
+  "scope": "New offline handoff checks, not upstream historical verification.",
+  "runs": [
+    {
+      "script": "check_exact.py",
+      "script_sha256": "16bb19c4ac0e4ab2fd5987936d0ea7ab899bd9d70a2bcb73e18b1efe04343c29",
+      "exit_code": 0,
+      "wall_seconds": 0.8035730100000364,
+      "stdout_sha256": "06b61d9ad0122711e1d7efbaf1ea3c730230c0ece7db16de04854518fa754a3e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "PASS"
+    },
+    {
+      "script": "test_mutations.py",
+      "script_sha256": "1e65ef58a3d0845a936469c3ef26ffb1e82a6014ef1b94f62cd77cd3b66b92b1",
+      "exit_code": 0,
+      "wall_seconds": 11.799163988999908,
+      "stdout_sha256": "2dbdeee72187aacdac6638d64803975e7acc632f7b4527c84cfdaef02e4e9ffc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "PASS"
+    }
+  ],
+  "protected_source_and_certificate_files_unchanged": true,
+  "formal_verification": false,
+  "large_field_or_host_constructed": false
+}

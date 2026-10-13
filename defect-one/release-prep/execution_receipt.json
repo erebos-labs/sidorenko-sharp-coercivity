@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-13T11:16:30.364625+00:00",
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "commands": "Package-relative equivalents of the actual absolute program arguments; all ran from disposable working directories.",
+  "scope": "Actual mathematical component replays on corrected local candidate; final ZIP replay is recorded in preparation sidecar.",
+  "jobs": [
+    {
+      "command": [
+        "python3",
+        "-I",
+        "-B",
+        "check_exact.py"
+      ],
+      "started_utc": "2026-10-13T11:16:29.453308+00:00",
+      "returncode": 0,
+      "stderr_bytes": 0,
+      "elapsed_seconds": 0.18090325011871755,
+      "script_sha256": "16bb19c4ac0e4ab2fd5987936d0ea7ab899bd9d70a2bcb73e18b1efe04343c29",
+      "stdout_sha256": "06b61d9ad0122711e1d7efbaf1ea3c730230c0ece7db16de04854518fa754a3e",
+      "byte_identical_to_historical": true
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "-B",
+        "test_mutations.py"
+      ],
+      "started_utc": "2026-10-13T11:16:29.634367+00:00",
+      "returncode": 0,
+      "stderr_bytes": 0,
+      "elapsed_seconds": 0.7300340419169515,
+      "script_sha256": "1e65ef58a3d0845a936469c3ef26ffb1e82a6014ef1b94f62cd77cd3b66b92b1",
+      "stdout_sha256": "2dbdeee72187aacdac6638d64803975e7acc632f7b4527c84cfdaef02e4e9ffc",
+      "byte_identical_to_historical": true
+    }
+  ],
+  "version": "1.0.1-rc1",
+  "mathematical_handoff": "1.0.0",
+  "baseline_commit": "8b350971095fda13884ea568d1914c1edd7fc966",
+  "new_root_license_sha256": "04690d463ba7d13b6b853229a5b1eefefd0b346e063a55967ba2f75f06038a6c",
+  "not_published": true
+}

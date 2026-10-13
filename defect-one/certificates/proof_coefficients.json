@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "gain_per_plane": 2,
+  "basis_power_per_plane": 4,
+  "higher_defect_D_multiplier": 2,
+  "step_cost_coefficients": {
+    "111": [
+      2,
+      -1,
+      -1,
+      1,
+      0
+    ],
+    "000": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "001": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "010": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "011": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "cost_variable_order": [
+    "D",
+    "x",
+    "y",
+    "mu",
+    "global_prefix_dimension"
+  ],
+  "defect_values": {
+    "111": 0,
+    "000": 0,
+    "001": 1,
+    "010": 1,
+    "011": 2
+  }
+}

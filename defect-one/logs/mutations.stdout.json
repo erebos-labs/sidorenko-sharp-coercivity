@@ -1,0 +1,189 @@
+{
+  "status": "PASS",
+  "mutations_rejected": 14,
+  "tests": [
+    {
+      "test": "gain_removed",
+      "changed_field": "gain_per_plane",
+      "old": 2,
+      "new": 0,
+      "input_sha256": "8c8ce43ebdcff49c2d172de85f19536c06a99d967b64e7c7e6f0c2d4ff8fedf7",
+      "exit_code": 1,
+      "expected_failure": "identity:robust_actual_defect_exponent",
+      "stderr": "CHECK_FAILED: identity:robust_actual_defect_exponent",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "test": "wrong_basis_power",
+      "changed_field": "basis_power_per_plane",
+      "old": 4,
+      "new": 3,
+      "input_sha256": "2fd8be6122c2fb8ad54cbb33fe1c948abfb0cb35843b2d8fa9e538f49a1d68dd",
+      "exit_code": 1,
+      "expected_failure": "identity:gain_after_full_basis_division",
+      "stderr": "CHECK_FAILED: identity:gain_after_full_basis_division",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "test": "missing_intersection_allowance",
+      "changed_field": "step_cost_coefficients.111",
+      "old": [
+        2,
+        -1,
+        -1,
+        1,
+        0
+      ],
+      "new": [
+        2,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "input_sha256": "989991734eea8174c759857bb27aeffa4ab0d139c7a3343b9fc6972aaf9c7020",
+      "exit_code": 1,
+      "expected_failure": "identity:step_cost_111",
+      "stderr": "CHECK_FAILED: identity:step_cost_111",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "test": "missing_dependent_endpoint_cost",
+      "changed_field": "step_cost_coefficients.001",
+      "old": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "new": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_sha256": "134f55ef8193e958e649ace6bc193551a76e4175fe427543ebef531a266ade8a",
+      "exit_code": 1,
+      "expected_failure": "identity:step_cost_001",
+      "stderr": "CHECK_FAILED: identity:step_cost_001",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "test": "two_sided_defect_misclassified",
+      "changed_field": "defect_values.011",
+      "old": 2,
+      "new": 1,
+      "input_sha256": "e611152a01005724c56d49e403ba5ab4d36433548d2f19231aa2c38336549cfc",
+      "exit_code": 1,
+      "expected_failure": "defect_value:011",
+      "stderr": "CHECK_FAILED: defect_value:011",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "test": "unsupported_smaller_remainder",
+      "changed_field": "defect_one_remainder",
+      "old": 241,
+      "new": 240,
+      "input_sha256": "6094ef35bd56a3f4c42ebd9b74507e3d0feed8ac456cc62d409bc535d7b94335",
+      "exit_code": 1,
+      "expected_failure": "defect_one_remainder",
+      "stderr": "CHECK_FAILED: defect_one_remainder",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "test": "missing_pattern_prefactor",
+      "changed_field": "defect_one_prefactor_power",
+      "old": 118,
+      "new": 117,
+      "input_sha256": "a061acdcf9c1208b79cb42ecf5ac744598c2edc26a042779281a9060bf27e8e1",
+      "exit_code": 1,
+      "expected_failure": "complete_pattern_prefactor",
+      "stderr": "CHECK_FAILED: complete_pattern_prefactor",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "test": "corrupted_robust_remainder",
+      "changed_field": "robust_remainder",
+      "old": 1196,
+      "new": 1195,
+      "input_sha256": "05907af52b92e1100a67a3ee58ee565b4f24c71f6bec0bc8de3245bb416b852f",
+      "exit_code": 1,
+      "expected_failure": "retained_1196",
+      "stderr": "CHECK_FAILED: retained_1196",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "test": "actual_defect_dropped",
+      "changed_field": "higher_defect_D_multiplier",
+      "old": 2,
+      "new": 1,
+      "input_sha256": "a8ce7b9b833c62320b15df51b70576ffa9e6e30ffb82ee02aa4d2928478827b2",
+      "exit_code": 1,
+      "expected_failure": "actual_defect_two_multiplier",
+      "stderr": "CHECK_FAILED: actual_defect_two_multiplier",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "test": "integer_mode_threshold_lowered",
+      "changed_field": "new_sufficient_even_D",
+      "old": 600,
+      "new": 598,
+      "input_sha256": "0e5b7c8347a6306ac97ebe4579cfccc757206f77921cae4292952bd428f10d97",
+      "exit_code": 1,
+      "expected_failure": "integer_mode_removal_threshold",
+      "stderr": "CHECK_FAILED: integer_mode_removal_threshold",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "test": "field_threshold_lowered",
+      "changed_field": "minimum_field_size",
+      "old": 9600,
+      "new": 9599,
+      "input_sha256": "7d373c39c33453ea48d490c7be156ed6920c41893949f45d61d2fa53a14d57b7",
+      "exit_code": 1,
+      "expected_failure": "retained_field_threshold",
+      "stderr": "CHECK_FAILED: retained_field_threshold",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "test": "full_bases_assumed_in_line_pattern",
+      "changed_field": "q13_first_line_bases",
+      "old": 1872,
+      "new": 26208,
+      "input_sha256": "82a94c464b77f631d29893a903a554d17aee9036a73f995eb3e61aa105c28a93",
+      "exit_code": 1,
+      "expected_failure": "control_line_basis_count",
+      "stderr": "CHECK_FAILED: control_line_basis_count",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "test": "pinned_source_byte_corruption",
+      "exit_code": 1,
+      "expected_failure": "source_length:sources/published/THEOREM.md",
+      "stderr": "CHECK_FAILED: source_length:sources/published/THEOREM.md",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "test": "optimized_python",
+      "exit_code": 1,
+      "expected_failure": "optimized_python_not_accepted",
+      "stderr": "CHECK_FAILED: optimized_python_not_accepted",
+      "status": "REJECTED_AS_EXPECTED"
+    }
+  ],
+  "limit": "These controls detect the stated corruptions, not every possible checker or proof error."
+}

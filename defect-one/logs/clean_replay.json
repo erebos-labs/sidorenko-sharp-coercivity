@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "stage": "Clean directory export before adding this receipt and final ZIP manifest.",
+  "replay": {
+    "status": "PASS",
+    "manifest_files": 26,
+    "offline": true,
+    "runs": [
+      {
+        "script": "check_exact.py",
+        "exit_code": 0,
+        "stdout_sha256": "06b61d9ad0122711e1d7efbaf1ea3c730230c0ece7db16de04854518fa754a3e",
+        "byte_identical": true
+      },
+      {
+        "script": "test_mutations.py",
+        "exit_code": 0,
+        "stdout_sha256": "2dbdeee72187aacdac6638d64803975e7acc632f7b4527c84cfdaef02e4e9ffc",
+        "byte_identical": true
+      }
+    ],
+    "scope": "This handoff only; not an upstream historical verifier or formal proof."
+  },
+  "core_files": {
+    "PROOF.md": "e18fe1d73e5b4d81f7b80da8555ed094ef684126d6d0d00f0867a295639497c6",
+    "DOWNSTREAM.md": "068d3b03a58a720a2e3895a94053838080481ba1124a63362522df5de27c5d8b",
+    "check_exact.py": "16bb19c4ac0e4ab2fd5987936d0ea7ab899bd9d70a2bcb73e18b1efe04343c29",
+    "test_mutations.py": "1e65ef58a3d0845a936469c3ef26ffb1e82a6014ef1b94f62cd77cd3b66b92b1",
+    "certificates/template_and_budget.json": "3f65b8f3c8722d009150e4786d9712bac01a8cd46c145d093426022949ada76f",
+    "certificates/proof_coefficients.json": "26c6e0c04f892ea1ad470e47a37b3279ce00e701af0decd3fea6a4f70698eee9",
+    "certificates/controls.json": "bfbefd7d9e7cd26dcd9a4c838dbc738900ec9250acd3cdfc0110f0c6c9d31212"
+  },
+  "note": "Final ZIP is separately CRC-checked, extracted, and fully replayed after finalization."
+}

@@ -31,3 +31,11 @@ three copied OpenAI sections retain Apache-2.0. See
 full-slack/THIRD_PARTY_NOTICES.md and the unchanged licenses under
 full-slack/sources/. The standalone new-package replay is offline; no
 unclear-license external source cache is distributed with it.
+
+The defect-one package in defect-one/ uses MIT for new original proof/prose,
+checkers and packaging tests. It credits the adaptation of the checked
+full-slack manifest/test structure. Its copied published files retain their
+MIT source notice; copied OpenAI complex.tex retains Apache-2.0. All source
+license bytes remain unchanged. See defect-one/THIRD_PARTY_NOTICES.md and
+its source licenses. The unclear-license recovered manuscript is pinned
+as an external reference and is not redistributed.

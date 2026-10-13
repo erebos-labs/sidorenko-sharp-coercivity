@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-13T11:25:01.518872+00:00",
+  "repository_version": "v1.4.0",
+  "package_version": "1.0.1",
+  "mathematical_handoff_version": "1.0.0",
+  "archive": {
+    "name": "sidorenko_defect_one_v1.0.1.zip",
+    "sha256": "51287961912e0117300c1b87c3a3fd8f22e15d66705a49f6850e2ed9f290c9a5",
+    "bytes": 68978,
+    "regular_entries": 36
+  },
+  "manifest_sha256": "dc867119d306102b23a518aca5a496a9939b9e1d0596ccac724df0e3e97f6f2f",
+  "approved_candidate_sha256": "5f91d32bbb919b1ee30d9cda156ced15fd691c92d29978caaf34d7c7d7667cb8",
+  "original_handoff_sha256": "f1d1b459e09dfc5ca2902e0ccb699af971807a6a5bae5d2130429ccec70567dc",
+  "baseline_commit": "8b350971095fda13884ea568d1914c1edd7fc966",
+  "new_contributions_license": "MIT; exact pinned Erebos license",
+  "third_party_licenses": "Copied MIT and Apache-2.0 preserved",
+  "local_replay": {
+    "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "status": "PASS",
+    "manifest_files": 35,
+    "math_mutation_rejections": 14,
+    "packaging_rejection_controls": 18,
+    "historical_math_stdout_and_stderr_byte_identical": true
+  },
+  "self_contained_offline_new_package_replay": true,
+  "historical_repository_replay_requires_external_cache": true,
+  "external_source_cache_redistributed": false,
+  "fetched_programs_executed": false,
+  "claim_scope": {
+    "N1": "2^118 q^(-D+241)",
+    "N_ge2": "2^63 q^(-2D+1196)",
+    "M_inherited": 50,
+    "sufficient_even_D": 600,
+    "odd_prime_condition": "q>=16D",
+    "rank_layer_C_D": "2^(32D+2048)(D+1)^256",
+    "robust1196_fallback_retained": true,
+    "evenD1198_fallback_retained": true,
+    "inherited_analytic_inputs_conditional": true
+  },
+  "not_claimed": [
+    "Complete smaller geometric counterexample",
+    "Concrete host/field recalculation",
+    "Optimal dimension or constants",
+    "Novelty/global priority",
+    "Lean verification",
+    "Independent human acceptance"
+  ],
+  "CI_record": "Hosted results are verified for the release commit; consult GitHub Actions."
+}
