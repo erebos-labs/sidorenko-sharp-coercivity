@@ -204,6 +204,13 @@ No named human discovery or independent human acceptance is claimed.
 See [variance attribution](variance/ATTRIBUTION.md) and the unchanged
 [original attribution](package/ATTRIBUTION.md).
 
+The [integer full-slack refinement](integer-slack/README.md) proves the sharp
+additive constant 1 on the integer points of the unchanged relaxed domain.
+It gives conditional M<=49 and mode removal at even D>=588; the higher-defect
+estimate keeps the complete sufficient threshold at even D>=600.
+This contribution by Alexander Richard Towell includes substantial OpenAI
+Codex assistance and a separate scoped AI review.
+
 Original contributions use [MIT](LICENSE). Exact copied OpenAI sources retain
 Apache-2.0 and source credit. Related unclear-license documents are references
 only; the source cache is excluded from releases. See

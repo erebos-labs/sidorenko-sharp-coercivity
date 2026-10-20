@@ -1,0 +1,70 @@
+{
+  "repository": "https://github.com/erebos-labs/sidorenko-sharp-coercivity",
+  "commit": "64f9ebf631c568c86adfdd3e1b6d8249cca00d8d",
+  "refreshed_at": "2026-10-20T07:18:28Z",
+  "files": [
+    {
+      "local_path": "source/THEOREM.md",
+      "source_path": "full-slack/THEOREM.md",
+      "bytes": 12879,
+      "sha256": "b338965b94b074e0c57eb59ee7991a7e6bb928c6e698ab0ea3086e821cfde7a8",
+      "git_blob_sha1": "60a838160b402118aed8f109c659b30760ff50c8"
+    },
+    {
+      "local_path": "source/DOWNSTREAM.md",
+      "source_path": "full-slack/DOWNSTREAM.md",
+      "bytes": 11263,
+      "sha256": "6df4a7408311940df30b683954c99e158703f86ea86597079f980c95163d5a95",
+      "git_blob_sha1": "b05884d7ce3e876e4b8fc6288ff2d3e0154ff0cb"
+    },
+    {
+      "local_path": "source/local.json",
+      "source_path": "full-slack/certificates/local.json",
+      "bytes": 529,
+      "sha256": "bc855fbefa150bd67c8d568b1aad2729ed6b26136ceca0abb1cf7533ed2afff2",
+      "git_blob_sha1": "6c73bc02db1544cfb876d531b8532d69736753a0"
+    },
+    {
+      "local_path": "source/original.json",
+      "source_path": "full-slack/certificates/original.json",
+      "bytes": 37968,
+      "sha256": "833e0e40377fe931cabc8bf1bccda5d7c250818e146c8f66bce2dca4a2fe8b0b",
+      "git_blob_sha1": "5dffc66627bdfe1a51544addca9d40d85b1873a7"
+    },
+    {
+      "local_path": "source/LICENSE",
+      "source_path": "LICENSE",
+      "bytes": 1068,
+      "sha256": "04690d463ba7d13b6b853229a5b1eefefd0b346e063a55967ba2f75f06038a6c",
+      "git_blob_sha1": "fd53c72f02b17b6c660b9a95144175fc4178f8b3"
+    },
+    {
+      "local_path": "source/defect-one-DOWNSTREAM.md",
+      "source_path": "defect-one/DOWNSTREAM.md",
+      "bytes": 5556,
+      "sha256": "068d3b03a58a720a2e3895a94053838080481ba1124a63362522df5de27c5d8b",
+      "git_blob_sha1": "8c7a326d364021661b57eb85ab68dbcce8944e55"
+    },
+    {
+      "local_path": "source/THIRD_PARTY_NOTICES.md",
+      "source_path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 3039,
+      "sha256": "57788e99b79be854042a6851b9d3e721808fc45ed88986aaf24ea98822eef292",
+      "git_blob_sha1": "9bd13a772b9765740bf71af2557a20cba7f47fa2"
+    },
+    {
+      "local_path": "source/package-ATTRIBUTION.md",
+      "source_path": "package/ATTRIBUTION.md",
+      "bytes": 1446,
+      "sha256": "f8c75eec68c785c10503b8d0dab9e4bb570d0dd3e6fed44829a96dfa91f23596",
+      "git_blob_sha1": "0844b0c621673220b13b1425a736e5316070b5cf"
+    },
+    {
+      "local_path": "source/OPENAI-LICENSE",
+      "source_path": "full-slack/sources/openai/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    }
+  ]
+}

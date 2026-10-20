@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "version": "1.0.0",
+  "C": "17/16",
+  "coefficient": "1/12",
+  "variance_coefficient": "1/48",
+  "homogeneous_constants": {
+    "J_multiplier": 17,
+    "k_square_multiplier": 6
+  },
+  "sharp_tuple": {
+    "c": "5/2",
+    "d": "5/2",
+    "delta": "5/2",
+    "v": "5/2",
+    "p": [
+      "0",
+      "0",
+      "0"
+    ],
+    "t": [
+      "1/2",
+      "1/2",
+      "1/2"
+    ]
+  },
+  "expected_sharp_Q": "17/16",
+  "expected_sharp_S": "-29/16",
+  "expected_sharp_V": "0",
+  "expected_sharp_remainder": "-17/16"
+}

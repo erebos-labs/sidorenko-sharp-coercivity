@@ -1,0 +1,144 @@
+{
+  "evidence": "exact arithmetic supporting a written proof",
+  "source_files_checked": 9,
+  "identities": {
+    "identities": 37,
+    "exact_evaluations": 1166,
+    "labels": [
+      "slack_remainder",
+      "integer_numerator",
+      "c_reduction_-1",
+      "c_reduction_1",
+      "delta_zero_square",
+      "negative_translation",
+      "positive_expansion",
+      "p_reduction",
+      "symmetry_0000",
+      "symmetry_0001",
+      "symmetry_0010",
+      "symmetry_0011",
+      "symmetry_0100",
+      "symmetry_0101",
+      "symmetry_0110",
+      "symmetry_0111",
+      "symmetry_1000",
+      "symmetry_1001",
+      "symmetry_1010",
+      "symmetry_1011",
+      "symmetry_1100",
+      "symmetry_1101",
+      "symmetry_1110",
+      "symmetry_1111",
+      "hinge_expansion_0",
+      "hinge_expansion_1",
+      "reduced_J",
+      "excess_reduction",
+      "maximum_u",
+      "maximum_delta_reduction_0",
+      "maximum_delta_reduction_1",
+      "maximum_v_high",
+      "maximum_v_low",
+      "last_square",
+      "integer_dispersion",
+      "equal_q_variance",
+      "integer_sharp_ray"
+    ]
+  },
+  "downstream": {
+    "coordinates": 33,
+    "inverse_entries_checked": 1089,
+    "Gamma": "22",
+    "Psi": "167611112777076",
+    "strict_bound": 50,
+    "integer_M_bound": 49,
+    "mode_removal_even_D": 588,
+    "retained_complete_even_D": 600,
+    "minimum_linear_margin": 9512883990372,
+    "minimum_squared_margin": 194226871915968682337664,
+    "failed_B49_coordinates": 3,
+    "failed_B49_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        3,
+        10
+      ]
+    ]
+  },
+  "finite_boundary_grid": {
+    "domain": {
+      "p_i_and_t_i": [
+        0,
+        3
+      ],
+      "delta": [
+        -3,
+        5
+      ],
+      "v": "all integers 0..min_i(p_i+delta)",
+      "c": "abs(delta)+{0,1}",
+      "d": "max(P+T,3delta+2P-2v)+{0,1}",
+      "filter": "t_i<=p_i+delta for every i"
+    },
+    "seed": null,
+    "stopping_rule": "exhaust this deterministic finite domain",
+    "profiles": 358488,
+    "minimum_R": "-1",
+    "boundary_equality_profiles": 2,
+    "equality_examples": [
+      {
+        "c": 2,
+        "d": 2,
+        "delta": 2,
+        "v": 2,
+        "p": [
+          0,
+          0,
+          0
+        ],
+        "t": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "c": 3,
+        "d": 3,
+        "delta": 3,
+        "v": 3,
+        "p": [
+          0,
+          0,
+          0
+        ],
+        "t": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "negative_controls": {
+    "rejected_controls": 10,
+    "labels": [
+      "constant term",
+      "linear term",
+      "square term",
+      "mixed term",
+      "constant 47/48",
+      "integer bound on real domain",
+      "individual v constraint",
+      "corrupted inverse",
+      "unsupported B49",
+      "old constant at B50"
+    ]
+  }
+}
